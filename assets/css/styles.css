@@ -1,0 +1,14 @@
+.info{
+    list-style: none;
+    font-family:monospace;
+    background-color: grey;
+}
+.links{
+    font-family:monospace;
+    background-color: rgb(168, 155, 155);
+    
+}
+.onlybutton:active{
+    width: 500px;
+    background-color: blue;
+}
