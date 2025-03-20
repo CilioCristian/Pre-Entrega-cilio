@@ -13,46 +13,57 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
 
+
+
   <body class="body">
     <header class="header">
-      <section class="container-fluid bg-dark d-flex justify-content-center">
-        <p class="text-light mb-0 p-1">¡Envíos a todo el país! // Precios SIN IVA incluido // Somos fabricantes</p>
+      <section class="header__top">
+      <section class="container-fluid bg-dark d-flex text-white  justify-content-center">
+      <article class="topbar">
+        <p class="text-light">
+          ¡Envíos a todo el país! // Precios SIN IVA incluido // Somos fabricantes</p>
+      </article>
       </section>
-
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      
+    
+      <nav class="navbar navbar-expand-lg bg-body-tertiarys p-0">
         <div class="container-fluid">
           <!-- logo onlyplast -->
-          <a class="navbar-brand" href="">
-            <img
-              src="assets/images/only.webp"class="img-fluid"alt="logo_onlyplast"> </a>
-         
-
+          <article class="logo_onlyplast">    
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/only.webp"class="img-fluid"alt="logo_onlyplast">
+            </a>
+          </article>
           <!-- buscador -->
           <article class="browser">
             <div class="browser__search justify-content-center" role="search">
               <input class="form-control me-2"type="search"placeholder="¿Que estas buscando?"aria-label="Search"/>
             </div>              
           </article>
-          <div class="buttons">
+          <article class="buttons">
               <!-- boton de ayuda -->
-              <button type="button" class="buttons__ayuda">Ayuda</button>
+              <button type="button" class="buttons__ayuda text-white">Ayuda</button>
 
               <!-- boton de usuario -->
-              <button type="button" class="buttons__usuario">Usuario</button>
+              <button type="button" class="buttons__usuario text-white">Usuario</button>
 
               <!-- boton de mi carrito -->
-              <button type="button" class="buttons__carrito">Carrito</button>
-            </div>
+              <button type="button" class="buttons__carrito text-white">Carrito</button>
+          </article>
           </div>
         </div>
       </nav>
 
+    </section>
+      <div class="divisor"> </div>
+      <section class="header__bottom">
+
       <!-- MODELOS -->
-      <ul class="nav justify-content-center">
+      <ul class="nav justify-content-center p-3 mb-2  ">
         <!-- boton de pilfer -->
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown ">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link dropdown-toggle text-white "
             href="#"
             role="button"
             data-bs-toggle="dropdown"
@@ -60,7 +71,7 @@
           >
             Pilfer
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu ">
             <li><a class="dropdown-item" href="#">Pilfer 20cc</a></li>
             <li><a class="dropdown-item" href="#">Pilfer 30cc</a></li>
             <li><a class="dropdown-item" href="#">Pilfer 55cc</a></li>
@@ -78,7 +89,7 @@
         <!-- boton de cilindricos -->
         <li class="nav-item dropdown">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link dropdown-toggle text-white"
             href="#"
             role="button"
             data-bs-toggle="dropdown"
@@ -105,7 +116,7 @@
         <!-- boton de potes -->
         <li class="nav-item dropdown">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link dropdown-toggle text-white"
             href="#"
             role="button"
             data-bs-toggle="dropdown"
@@ -132,7 +143,7 @@
         <!-- boton de goteros -->
         <li class="nav-item dropdown">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link dropdown-toggle text-white"
             href="#"
             role="button"
             data-bs-toggle="dropdown"
@@ -154,7 +165,7 @@
         <!-- boton de talquera-->
         <li class="nav-item dropdown">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link dropdown-toggle text-white"
             href="#"
             role="button"
             data-bs-toggle="dropdown"
@@ -172,6 +183,7 @@
           </ul>
         </li>
       </ul>
+    </section>
     </header>
 
     <!-- carrousel de fotos -->

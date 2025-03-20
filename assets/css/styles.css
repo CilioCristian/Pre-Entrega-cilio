@@ -1,40 +1,105 @@
+.body {
+  font-family: "Nunito", sans-serif;
+  /*box-sizing: inherit;*/
+  background-color: #62c3c7;
+}
+.header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #62c3c7;
+    height: 200px;
+}
+.header_top{
+    height: 70px;
+}
+.header_bottom{
+    height: 30px;
+}
+/* ¡Envíos a todo el país! // Precios SIN IVA incluido // Somos fabricantes */
 
-.container-fluid{
-    background-color: rgb(75, 196, 205);
-}
-.browser{
-    border-radius: 20px;
+.topbar{
+
+    font-size: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
     overflow: hidden;
+
+}
+/* Hasta aca ¡Envíos a todo el país! // Precios SIN IVA incluido // Somos fabricantes */
+
+/* Logo, Buscador, boton ayuda, boton usuario y boton carrito */
+
+nav.navbar {
+    height: 100px;
+  }
+/* LOGO */
+.logo_onlyplast{
     display: flex;
-}
-.buttons__ayuda{
-    border:none;
-    background-color: rgb(75, 196, 205);
-}
-.buttons__usuario{
-    border:none;
-    background-color: rgb(75, 196, 205);
-}
-.buttons__carrito{
-    border:none;
-    background-color: rgb(75, 196, 205);
-}
-.buttons__ayuda:active{
-    background-color: grey;
-    border-radius: 40px;
-}
-.buttons__carrito:active{
-    background-color: grey;
-    border-radius: 40px;
-}
-.buttons__usuario:active{
-    background-color: grey;
-    border-radius: 40px;
-}
-.banner{
-    background-color: grey;
-    display: flex;
-    justify-content: center;
     
-    
+    height: 50px;
+}
+/* FIN DE LOGO */
+
+/* BUSCADOR */
+.browser {
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+}
+/* FIN DE BUSCADOR */
+
+/* BOTONES, AYUDA,USUARIO Y CARRITO */
+.buttons {
+  display: flex;
+}
+.buttons__ayuda {
+  border: none;
+  background-color: #62c3c7;
+}
+.buttons__usuario {
+  border: none;
+  background-color: #62c3c7;
+}
+.buttons__carrito {
+  border: none;
+  background-color: #62c3c7;
+}
+.buttons__ayuda:active {
+  background-color: grey;
+  border-radius: 40px;
+}
+.buttons__carrito:active {
+  background-color: grey;
+  border-radius: 40px;
+}
+.buttons__usuario:active {
+  background-color: grey;
+  border-radius: 40px;
+}
+/* FIN DE BOTONES, AYUDA,USUARIO Y CARRITO */
+/* Hasta aca Logo, Barra de navegacion, boton ayuda, boton usuario y boton carrito */
+
+/* Linea divisora */
+.divisor {
+  width: 100%;
+  height: 1px;
+  background-color: #92ffed;
+  filter: brightness(80%);
+}
+/* Fin de Linea divisora */
+
+ul.nav {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
