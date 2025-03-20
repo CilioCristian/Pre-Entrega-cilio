@@ -1,14 +1,41 @@
-.info{
-    list-style: none;
-    font-family:monospace;
-    background-color: grey;
+
+.container-fluid{
+    background-color: rgb(75, 196, 205);
 }
-.links{
-    font-family:monospace;
-    background-color: rgb(168, 155, 155);
+.browser{
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+.buttons__ayuda{
+    border:none;
+    background-color: rgb(75, 196, 205);
+}
+.buttons__usuario{
+    border:none;
+    background-color: rgb(75, 196, 205);
+}
+.buttons__carrito{
+    border:none;
+    background-color: rgb(75, 196, 205);
+}
+.buttons__ayuda:active{
+    background-color: grey;
+    border-radius: 40px;
+}
+.buttons__carrito:active{
+    background-color: grey;
+    border-radius: 40px;
+}
+.buttons__usuario:active{
+    background-color: grey;
+    border-radius: 40px;
+}
+.banner{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    
     
 }
-.onlybutton:active{
-    width: 500px;
-    background-color: blue;
-}
+.ba
