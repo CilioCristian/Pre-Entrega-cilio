@@ -19,37 +19,57 @@
         <section
           class="container-fluid bg-black d-flex justify-content-center "
           >
-          <article class="container-fluid__top">
+          <article class="container-fluid__top d-flex">
             <p class="font-monospace text-light ">
               ¡Envíos a todo el país! // Precios SIN IVA incluido // Somos
               fabricantes
             </p>
           </article>
         </section>
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiarys ">
-          <!-- logo onlyplast -->
-          <article class="navbar__logo">
-            <div href="index.html">
-              <img src="assets/images/only.webp" alt="Logo"class="navbar__logo--only img-fluid">
+        
+        <section class="header__middle">
+          <nav class="navbar navbar-expand-lg bg-body-tertiarys d-flex justify-content-between align-items-center ">
+            <!-- logo onlyplast -->
+            <article class="navbar__logo">
+              <a href="index.html">
+                <img src="assets/images/only.webp" alt="Logo"class="navbar__logo--only img-fluid">
+                </a>
+            </article>
+              <!-- buscador -->
+            <article class="browser font-monospace flex-grow-1 mx-3 ">
+              <div class="browser__search " role="search">
+                <input
+                  class="form-control "
+                  type="search"
+                  placeholder="¿Que estas buscando?..."
+                  aria-label="Search"
+                />
               </div>
-          </article>
-            <!-- buscador -->
-            <section>
-              <article class="browser font-monospace ">
-                <div class="browser__search " role="search">
-                  <input
-                    class="form-control me-3"
-                    type="search"
-                    placeholder="¿Que estas buscando?..."
-                    aria-label="Search"
-                  />
-                </div>
-              </article>
-            </section>
-            <section class="buttons">
+            </article>
+
+
+            <article class="menu font-monospace "style="width: 100%;">
+              <li class="menu__d dropdown " style="width: 100%;">
+                <p
+                  class="menu-link dropdown-toggle text-white "
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Menu
+                </a>
+                <ul class="dropdown-menu "style="width: 100%;">
+                  <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
+                  <li><a class="dropdown-item" href="#">Mi Carrito</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Ayuda</a></li>
+                </ul>
+              </li>
+            </article>
+            <article class="buttons d-flex">
               <!-- boton de ayuda -->
-              <div class="buttonx3">
+              <div class="buttonx3 mx-1">
                 <button type="button" class="buttons__ayuda text-white font-monospace">
                   <img
                   src="assets/images/iconos/ayuda.svg"
@@ -59,7 +79,7 @@
                   
                 </button>
               </div>
-              <div class="buttonx3">
+              <div class="buttonx3 mx-1">
                 <!-- boton de usuario -->
                 <button type="button" class="buttons__usuario text-white font-monospace">
                   <img
@@ -70,7 +90,7 @@
                   
                 </button>
               </div>
-              <div class="buttonx3">
+              <div class="buttonx3 mx-1">
                 <!-- boton de mi carrito -->
                 <button type="button" class="buttons__carrito text-white font-monospace"><img
                   src="assets/images/iconos/carrito.svg"
@@ -80,14 +100,40 @@
                   
                 </button>
               </div>
-            </section>
-        </nav>
+            </article>
+          </nav>
+        </section>
       </section>
       <!-- divisor -->
       <div class="divisor"></div>
-      
+      <!-- MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS  -->
+      <article class="modelos">
+        <div class="modelos__ul">
+      <ul class="nav justify-content-center p-0 mb-0 font-monospace " style="width: 100%;">
+        <!-- boton de pilfer -->
+        <li class="nav-item dropdown "style="width: 100%;">
+          <a
+            class="nav-link dropdown-toggle text-white "
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            MODELOS
+          </a>
+          <ul class="dropdown-menu "style="width: 100%;">
+            <li><a class="dropdown-item " href="#">Pilfers</a></li>
+            <li><a class="dropdown-item" href="#">Cilindricos</a></li>
+            <li><a class="dropdown-item" href="#">Potes</a></li>
+            <li><a class="dropdown-item" href="#">Goteros</a></li>
+            <li><a class="dropdown-item" href="#">Talqueras</a></li>
+          </ul>
+        </li>
+      </div>
+      </article>
+      <!-- MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS MODELOS  -->
       <section class="header__bottom">
-        <!-- MODELOS -->
+
         <ul class="nav justify-content-center p-0 mb-0 font-monospace">
           <!-- boton de pilfer -->
           <li class="nav-item dropdown ">
@@ -217,6 +263,7 @@
 
     <!-- carrousel de fotos -->
     <main class="main">
+      
       <section 
         id="carouselExampleAutoplaying"
         class="carousel slide"
@@ -264,6 +311,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </section>
+    
 
 
 <!-- lista grid de 6 productos -->
@@ -327,6 +375,147 @@
               </div>
             </div>
           </div>
+        </article>
+      </section>
+      <!-- fin lista grid de 6 productos -->
+      <section class="sixgrid2">
+        <article class="container my-4">
+
+          <div class="row g-1 justify-content-center">
+            <div class="grid-images col-9">
+              <a href="" target="_blank">
+                <img
+                  src="assets/images/potes.png"
+                  alt="Imagen 1"
+                  class="img-fluid rounded"
+              /></a>
+            </div>
+          </div>
+
+          <div class="row g-2 justify-content-center">
+            <div class="grid-images col-9">
+              <a href="" target="_blank"
+                ><img
+                  src="assets/images/botellas.png"
+                  alt="Imagen 2"
+                  class="img-fluid rounded"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="row g-3 justify-content-center">
+            <div class="grid-images col-9">
+              <a href="" target="_blank">
+                <img
+                  src="assets/images/goteros.png"
+                  alt="Imagen 3"
+                  class="img-fluid rounded"
+              /></a>
+            </div>
+          </div>
+
+            <div class="row g-4 justify-content-center">
+              <div class="grid-images col-9">
+              <a href="" target="_blank"
+                ><img
+                  src="assets/images/vainilleros.webp"
+                  alt="Imagen 4"
+                  class="img-fluid rounded"
+                />
+              </a>
+              </div>
+            </div>
+
+            <div class="row g-5 justify-content-center">
+              <div class="grid-images col-9">
+              <a href="" target="_blank">
+                <img
+                  src="assets/images/bidones.webp"
+                  alt="Imagen 5"
+                  class="img-fluid rounded"
+              /></a>
+              </div>
+            </div>
+
+
+            <div class="row g-6 justify-content-center">
+              <div class="grid-images col-9">
+                <a href="" target="_blank">
+                  <img
+                  src="assets/images/tapers.webp"
+                  alt="Imagen 6"
+                  class="img-fluid rounded"
+                  />
+                </a>
+              </div>
+            </div>
+        </article>
+      </section>
+      <!-- fin lista grid de 6 productos -->
+      <section class="sixgrid3">
+        <article class="container my-4">
+          <div class="row g-1 justify-content-center">
+            <div class="grid-images col-5">
+              <a href="" target="_blank">
+                <img
+                  src="assets/images/potes.png"
+                  alt="Imagen 1"
+                  class="img-fluid rounded"
+              /></a>
+            </div>
+            
+            <div class="grid-images col-5">
+              <a href="" target="_blank"
+                ><img
+                  src="assets/images/botellas.png"
+                  alt="Imagen 2"
+                  class="img-fluid rounded"
+                />
+              </a>
+            </div>
+          </div>  
+          <div class="row g-2 justify-content-center">
+            <div class="grid-images col-5">
+              <a href="" target="_blank">
+                <img
+                  src="assets/images/goteros.png"
+                  alt="Imagen 3"
+                  class="img-fluid rounded"
+              /></a>
+            </div>
+          
+              <div class="grid-images col-5">
+              <a href="" target="_blank"
+                ><img
+                  src="assets/images/vainilleros.webp"
+                  alt="Imagen 4"
+                  class="img-fluid rounded"
+                />
+              </a>
+              </div>
+            </div>
+
+            <div class="row g-3 justify-content-center">
+              <div class="grid-images col-5">
+              <a href="" target="_blank">
+                <img
+                  src="assets/images/bidones.webp"
+                  alt="Imagen 5"
+                  class="img-fluid rounded"
+              /></a>
+              </div>
+            
+              <div class="grid-images col-5">
+                <a href="" target="_blank">
+                  <img
+                  src="assets/images/tapers.webp"
+                  alt="Imagen 6"
+                  class="img-fluid rounded"
+                  />
+                </a>
+              </div>
+            </div>
         </article>
       </section>
       <!-- fin lista grid de 6 productos -->

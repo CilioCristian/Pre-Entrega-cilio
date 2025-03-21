@@ -2,9 +2,13 @@
     font-family: "Nunito", sans-serif;
     /*box-sizing: inherit;*/
     background-color: #62c3c7;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
 }
 .header {
-    position: fixed;
+    position: sticky;
     right: 0;
     top: 0;
     left: 0;
@@ -16,6 +20,7 @@
     display: flex;
     flex-direction: column;
     height: auto;
+
 }
 .header__bottom {
     display: flex;
@@ -45,6 +50,8 @@
 /* LOGO */
 .navbar__logo--only {
     height: 60px;
+    width: auto;
+    
 }
 
 /* FIN DE LOGO */
@@ -55,7 +62,7 @@
 }
 .form-control{ 
     font-size: small;
-    width: 800px;
+    /*width: 800px;  */
     height: 30px;
 }
 
@@ -138,13 +145,16 @@
 }
 /* fin Pilfer,cilindricos,potes,goteros,talqueras */
 /* carrousel de fotos */
+
 .main{
-    
     display: flex;
     flex-direction: column;
-    padding-top: 140px;
+    height: auto;
+
 }
 .carousel{
+    display: block;
+    height: 100%;
     padding: 1;
     margin: 1;
 }
@@ -198,15 +208,447 @@
     cursor: pointer;
 }
 .footer__section--button:hover {
-    background-color: #202d2e;
-}
+    background-color: #4fa2a5;
+    }
+
 .footer__section--browser{
-    padding: 8px;
     font-size: small;
-    width: 50%;
+    width: 70%;
+    padding: 10px;
     border: none;
     border-radius: 10px; 
     margin-bottom: 0px;    
+    cursor: pointer;
+    
+}
+.menu{
+    list-style-type: none;
+    display:none;
 }
 /* fin de footer */
+/* Estilo general */
+/* Media Queries */
+.modelos{
+    display:none;
+}
+.sixgrid2{
+    display:none;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+.sixgrid3{
+    display: none;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+@media (max-width: 575.98px) { 
+    .container-fluid__top {
+        font-size: 10px;
+        height: auto;
+        padding-top: 15px;
+    }
+     /* fin fin fin  fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin */
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        height: auto;
+        width: auto;
+        
+        
+    }
+    .navbar__logo--only {
+        width: 100%;
+    }    
+    .browser{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
+    .browser__search{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .form-control{
+        width: 80%;
+    }
+     /* fin fin fin  fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin */
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
+    .buttonx3{
+        display:none;
+    }
+    .menu{
+        padding: 10px;
+        display: block;
+        height: 45px;
+    
+    }
+    .menu:hover {
+        background-color: #4fa2a5;
+        border-radius: 15px;
+        height: 45px;
+        cursor: pointer;
+    }
+    .menu__d{
+        text-align: center;
+    }
+    .dropdown-menu{
+        text-align: center;
+    }
+    /* fin fin fin  fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin */
+    .modelos{
+        
+        display: block;
+        height: 35px;
+    }
+    .header__bottom{
+        display: none;
+        
+    }
+    .modelos:hover{
+        background-color: #4fa2a5;
+        border-radius: 15px;
+        height: 35px;
+        cursor: pointer;
+    }
+    .dropdown-menu{
+        text-align: center;
+    }
+    .modelos__ul{
+        text-align: center;
+    }
+/* fin fin fin  fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin */
+    .sixgrid{
+        display: none;
+    }
+    .sixgrid2{
+    display: block;
+    }
+    .sixgrid3{
+        display: none;
+    }
+}
+/* fin fin fin  fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin */
 
+
+@media (min-width: 575.99px) and (max-width: 799.98px) {
+    .container-fluid__top {
+        font-size: 10px;
+        height: auto;
+        padding-top: 15px;
+    }
+     /* fin fin fin  fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin */
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        height: auto;
+        width: auto;
+        
+        
+    }
+    .navbar__logo--only {
+        width: 100%;
+    }    
+    .browser{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
+    .browser__search{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .form-control{
+        width: 80%;
+    }
+     /* fin fin fin  fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin */
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
+    .buttonx3{
+        display:none;
+    }
+    .menu{
+        padding: 10px;
+        display: block;
+        height: 45px;
+    
+    }
+    .menu:hover {
+        background-color: #4fa2a5;
+        border-radius: 15px;
+        height: 45px;
+        cursor: pointer;
+    }
+    .menu__d{
+        text-align: center;
+    }
+    .dropdown-menu{
+        text-align: center;
+    }
+    /* fin fin fin  fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin */
+    .modelos{
+        
+        display: block;
+        height: 35px;
+    }
+    .header__bottom{
+        display: none;
+        
+    }
+    .modelos:hover{
+        background-color: #4fa2a5;
+        border-radius: 15px;
+        height: 35px;
+        cursor: pointer;
+    }
+    .dropdown-menu{
+        text-align: center;
+    }
+    .modelos__ul{
+        text-align: center;
+    }
+/* fin fin fin  fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin */
+    .sixgrid{
+        display: none;
+    }
+    .sixgrid2{
+    display: none;
+    }
+    .sixgrid3{
+        display:block;
+    }
+/* fin fin fin  fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin */
+
+}
+@media ( min-width:799.99px) and (max-width: 1399.98px) {
+    .body {
+        font-family: "Nunito", sans-serif;
+        /*box-sizing: inherit;*/
+        background-color: #62c3c7;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    .header {
+        position: sticky;
+        right: 0;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: #62c3c7;
+        height: auto;
+    }
+    .header__top {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    
+    }
+    .header__bottom {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    /* ¡Envíos a todo el país! // Precios SIN IVA incluido // Somos fabricantes */
+    
+    .container-fluid__top {
+        font-size: 12px;
+        height: 20px;
+    }
+    /* Hasta aca ¡Envíos a todo el país! // Precios SIN IVA incluido // Somos fabricantes */
+    /* BOTONES, AYUDA,USUARIO Y CARRITO */
+    .buttons {
+        display: flex;
+        gap: 30px;
+    
+    }
+    .buttons__ayuda {
+        border: none;
+        background-color: #62c3c7;
+        padding-top: 10px;
+    }
+    .buttons__usuario {
+        border: none;
+        background-color: #62c3c7;
+        padding-top: 10px;
+    }
+    .buttons__carrito {
+        border: none;
+        background-color: #62c3c7;
+        padding-top: 10px;
+    
+    }
+    
+    .buttonx3{
+        display: flex;
+        flex-direction: column;
+        font-size: smaller;
+        align-items: center;
+        
+    }
+    
+    .buttons__ayuda:hover {
+        background-color: #4fa2a5;
+        border-radius: 15px;
+        height: 30px;
+    }
+    .buttons__carrito:hover {
+        background-color: #4fa2a5;
+        border-radius: 15px;
+        height: 30px;
+        
+    }
+    .buttons__usuario:hover {
+        background-color: #4fa2a5;
+        border-radius: 15px;
+        height: 30px;
+    }
+    /* FIN DE BOTONES, AYUDA,USUARIO Y CARRITO */
+    /* Hasta aca Logo, Barra de navegacion, boton ayuda, boton usuario y boton carrito */
+    
+    /* Linea divisora */
+    .divisor {
+        width: 100%;
+        height: 1px;
+        background-color: #92ffed;
+        filter: brightness(80%);
+    }
+    /* Fin de Linea divisora */
+    
+    /* Pilfer,cilindricos,potes,goteros,talqueras */
+    .nav {
+        height: auto;
+        
+    }
+    .nav-link:hover {
+        background-color: #4fa2a5;
+        border-radius: 30px;
+        height: auto;
+    }
+    .nav-link{
+        font-size: smaller;
+    }
+    .dropdown-menu{
+        font-size: x-small;
+    }
+    /* fin Pilfer,cilindricos,potes,goteros,talqueras */
+    /* carrousel de fotos */
+    
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    
+    }
+    .carousel{
+        display: block;
+        height: 100%;
+        padding: 1;
+        margin: 1;
+    }
+    /* fin carrousel de fotos */
+    
+    /*  lista grid de 6 productos */
+    .sixgrid{
+        background-color: white;
+        padding: 0px;
+        margin: 0px;
+    }
+    .grid-images{
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+    .container{
+        max-width: max-content;
+        margin: 0 auto
+    }
+    /* fin lista grid de 6 productos */
+    
+    /* footer */
+    .footer {
+        background-color: #62c3c7;
+        color: white;
+        text-align: center;
+        height: auto;
+    }
+    .footer__section{
+        padding: 70px 0 ;
+    }
+    .footer__section--h1{
+        font-size: small;
+        margin-bottom: 20px;
+    }
+    .footer__section--h2{
+        font-weight: bold;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .footer__section--p{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .footer__section--button{
+        padding: 5px;
+        background-color: white;
+        color: #62c3c7;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .footer__section--button:hover {
+        background-color: #4fa2a5;
+        }
+    
+    .footer__section--browser{
+        font-size: small;
+        width: 70%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px; 
+        margin-bottom: 0px;    
+        cursor: pointer;
+        
+    }
+    .menu{
+        list-style-type: none;
+        display:none;
+    }
+    /* fin de footer */
+    /* Estilo general */
+    /* Media Queries */
+    .modelos{
+        display:none;
+    }
+    .sixgrid2{
+        display:none;
+        background-color: white;
+        padding: 0px;
+        margin: 0px;
+    }
+    .sixgrid3{
+        display: none;
+        background-color: white;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+/* fin fin fin  fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin fin */
