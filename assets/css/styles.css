@@ -1,105 +1,212 @@
 .body {
-  font-family: "Nunito", sans-serif;
-  /*box-sizing: inherit;*/
-  background-color: #62c3c7;
+    font-family: "Nunito", sans-serif;
+    /*box-sizing: inherit;*/
+    background-color: #62c3c7;
 }
-.header{
+.header {
     position: fixed;
     right: 0;
     top: 0;
     left: 0;
     z-index: 1000;
     background-color: #62c3c7;
-    height: 200px;
+    height: auto;
 }
-.header_top{
-    height: 70px;
+.header__top {
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
-.header_bottom{
-    height: 30px;
+.header__bottom {
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
 /* ¡Envíos a todo el país! // Precios SIN IVA incluido // Somos fabricantes */
 
-.topbar{
-
-    font-size: 10px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    overflow: hidden;
-
+.container-fluid__top {
+    font-size: 12px;
+    height: 20px;
 }
 /* Hasta aca ¡Envíos a todo el país! // Precios SIN IVA incluido // Somos fabricantes */
 
 /* Logo, Buscador, boton ayuda, boton usuario y boton carrito */
-
-nav.navbar {
-    height: 100px;
-  }
-/* LOGO */
-.logo_onlyplast{
+/* papa de papa de LOGO */
+.navbar{
     display: flex;
-    
-    height: 50px;
+    justify-content: space-evenly;
 }
+/* fin papa de papa de LOGO */
+/* papa de LOGO */
+.navbar__logo{
+    height: auto;
+}
+/* finde papa LOGO */
+/* LOGO */
+.navbar__logo--only {
+    height: 60px;
+}
+
 /* FIN DE LOGO */
 
 /* BUSCADOR */
 .browser {
-  border-radius: 20px;
-  overflow: hidden;
-  display: flex;
+    overflow: visible;
 }
+.form-control{ 
+    font-size: small;
+    width: 800px;
+    height: 30px;
+}
+
 /* FIN DE BUSCADOR */
 
 /* BOTONES, AYUDA,USUARIO Y CARRITO */
 .buttons {
-  display: flex;
+    display: flex;
+    gap: 40px;
+
 }
 .buttons__ayuda {
-  border: none;
-  background-color: #62c3c7;
+    border: none;
+    background-color: #62c3c7;
+    padding-top: 10px;
 }
 .buttons__usuario {
-  border: none;
-  background-color: #62c3c7;
+    border: none;
+    background-color: #62c3c7;
+    padding-top: 10px;
 }
 .buttons__carrito {
-  border: none;
-  background-color: #62c3c7;
+    border: none;
+    background-color: #62c3c7;
+    padding-top: 10px;
+
 }
-.buttons__ayuda:active {
-  background-color: grey;
-  border-radius: 40px;
+
+.buttonx3{
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+    align-items: center;
+    
 }
-.buttons__carrito:active {
-  background-color: grey;
-  border-radius: 40px;
+
+.buttons__ayuda:hover {
+    background-color: #4fa2a5;
+    border-radius: 15px;
+    height: 30px;
 }
-.buttons__usuario:active {
-  background-color: grey;
-  border-radius: 40px;
+.buttons__carrito:hover {
+    background-color: #4fa2a5;
+    border-radius: 15px;
+    height: 30px;
+    
+}
+.buttons__usuario:hover {
+    background-color: #4fa2a5;
+    border-radius: 15px;
+    height: 30px;
 }
 /* FIN DE BOTONES, AYUDA,USUARIO Y CARRITO */
 /* Hasta aca Logo, Barra de navegacion, boton ayuda, boton usuario y boton carrito */
 
 /* Linea divisora */
 .divisor {
-  width: 100%;
-  height: 1px;
-  background-color: #92ffed;
-  filter: brightness(80%);
+    width: 100%;
+    height: 1px;
+    background-color: #92ffed;
+    filter: brightness(80%);
 }
 /* Fin de Linea divisora */
 
-ul.nav {
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+/* Pilfer,cilindricos,potes,goteros,talqueras */
+.nav {
+    height: auto;
+    
 }
-.nav-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.nav-link:hover {
+    background-color: #4fa2a5;
+    border-radius: 30px;
+    height: auto;
 }
+.nav-link{
+    font-size: smaller;
+}
+.dropdown-menu{
+    font-size: x-small;
+}
+/* fin Pilfer,cilindricos,potes,goteros,talqueras */
+/* carrousel de fotos */
+.main{
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 140px;
+}
+.carousel{
+    padding: 1;
+    margin: 1;
+}
+/* fin carrousel de fotos */
+
+/*  lista grid de 6 productos */
+.sixgrid{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+.grid-images{
+    margin-bottom: 50px;
+    padding: 10px;
+}
+.container{
+    max-width: max-content;
+    margin: 0 auto
+}
+/* fin lista grid de 6 productos */
+
+/* footer */
+.footer {
+    background-color: #62c3c7;
+    color: white;
+    text-align: center;
+    height: auto;
+}
+.footer__section{
+    padding: 70px 0 ;
+}
+.footer__section--h1{
+    font-size: small;
+    margin-bottom: 20px;
+}
+.footer__section--h2{
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.footer__section--p{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.footer__section--button{
+    padding: 5px;
+    background-color: white;
+    color: #62c3c7;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.footer__section--button:hover {
+    background-color: #202d2e;
+}
+.footer__section--browser{
+    padding: 8px;
+    font-size: small;
+    width: 50%;
+    border: none;
+    border-radius: 10px; 
+    margin-bottom: 0px;    
+}
+/* fin de footer */
+

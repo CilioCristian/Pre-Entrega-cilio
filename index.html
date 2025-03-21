@@ -13,187 +13,216 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
 
-
-
   <body class="body">
     <header class="header">
       <section class="header__top">
-      <section class="container-fluid bg-dark d-flex text-white  justify-content-center">
-      <article class="topbar">
-        <p class="text-light">
-          ¡Envíos a todo el país! // Precios SIN IVA incluido // Somos fabricantes</p>
-      </article>
-      </section>
-      
-    
-      <nav class="navbar navbar-expand-lg bg-body-tertiarys p-0">
-        <div class="container-fluid">
+        <section
+          class="container-fluid bg-black d-flex justify-content-center "
+          >
+          <article class="container-fluid__top">
+            <p class="font-monospace text-light ">
+              ¡Envíos a todo el país! // Precios SIN IVA incluido // Somos
+              fabricantes
+            </p>
+          </article>
+        </section>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiarys ">
           <!-- logo onlyplast -->
-          <article class="logo_onlyplast">    
-            <a class="navbar-brand" href="index.html">
-              <img src="assets/images/only.webp"class="img-fluid"alt="logo_onlyplast">
-            </a>
+          <article class="navbar__logo">
+            <div href="index.html">
+              <img src="assets/images/only.webp" alt="Logo"class="navbar__logo--only img-fluid">
+              </div>
           </article>
-          <!-- buscador -->
-          <article class="browser">
-            <div class="browser__search justify-content-center" role="search">
-              <input class="form-control me-2"type="search"placeholder="¿Que estas buscando?"aria-label="Search"/>
-            </div>              
-          </article>
-          <article class="buttons">
+            <!-- buscador -->
+            <section>
+              <article class="browser font-monospace ">
+                <div class="browser__search " role="search">
+                  <input
+                    class="form-control me-3"
+                    type="search"
+                    placeholder="¿Que estas buscando?..."
+                    aria-label="Search"
+                  />
+                </div>
+              </article>
+            </section>
+            <section class="buttons">
               <!-- boton de ayuda -->
-              <button type="button" class="buttons__ayuda text-white">Ayuda</button>
-
-              <!-- boton de usuario -->
-              <button type="button" class="buttons__usuario text-white">Usuario</button>
-
-              <!-- boton de mi carrito -->
-              <button type="button" class="buttons__carrito text-white">Carrito</button>
-          </article>
-          </div>
-        </div>
-      </nav>
-
-    </section>
-      <div class="divisor"> </div>
+              <div class="buttonx3">
+                <button type="button" class="buttons__ayuda text-white font-monospace">
+                  <img
+                  src="assets/images/iconos/ayuda.svg"
+                  class="buttons__ayuda"
+                  alt="flecha"
+                  /><p class="buttons__ayuda--p">Ayuda</p>
+                  
+                </button>
+              </div>
+              <div class="buttonx3">
+                <!-- boton de usuario -->
+                <button type="button" class="buttons__usuario text-white font-monospace">
+                  <img
+                  src="assets/images/iconos/usuario.svg"
+                  class="buttons__usuario"
+                  alt="flecha"
+                  /><p class="buttons__usuario--p">Mi cuenta</p>
+                  
+                </button>
+              </div>
+              <div class="buttonx3">
+                <!-- boton de mi carrito -->
+                <button type="button" class="buttons__carrito text-white font-monospace"><img
+                  src="assets/images/iconos/carrito.svg"
+                  class="buttons__carrito"
+                  alt="flecha"
+                  /><p class="buttons__carrito--p">Mi carrito</p>
+                  
+                </button>
+              </div>
+            </section>
+        </nav>
+      </section>
+      <!-- divisor -->
+      <div class="divisor"></div>
+      
       <section class="header__bottom">
+        <!-- MODELOS -->
+        <ul class="nav justify-content-center p-0 mb-0 font-monospace">
+          <!-- boton de pilfer -->
+          <li class="nav-item dropdown ">
+            <a
+              class="nav-link dropdown-toggle text-white "
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Pilfer
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item " href="#">Pilfer 20cc</a></li>
+              <li><a class="dropdown-item" href="#">Pilfer 30cc</a></li>
+              <li><a class="dropdown-item" href="#">Pilfer 55cc</a></li>
+              <li><a class="dropdown-item" href="#">Pilfer 80cc</a></li>
+              <li><a class="dropdown-item" href="#">Pilfer 100cc</a></li>
+              <li><a class="dropdown-item" href="#">Pilfer 250cc</a></li>
+              <li><a class="dropdown-item" href="#">Pilfer 499cc</a></li>
+              <li><a class="dropdown-item" href="#">Pilfer 500cc</a></li>
+              <li><a class="dropdown-item" href="#">Pilfer 1000cc</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">TODOS</a></li>
+            </ul>
+          </li>
 
-      <!-- MODELOS -->
-      <ul class="nav justify-content-center p-3 mb-2  ">
-        <!-- boton de pilfer -->
-        <li class="nav-item dropdown ">
-          <a
-            class="nav-link dropdown-toggle text-white "
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Pilfer
-          </a>
-          <ul class="dropdown-menu ">
-            <li><a class="dropdown-item" href="#">Pilfer 20cc</a></li>
-            <li><a class="dropdown-item" href="#">Pilfer 30cc</a></li>
-            <li><a class="dropdown-item" href="#">Pilfer 55cc</a></li>
-            <li><a class="dropdown-item" href="#">Pilfer 80cc</a></li>
-            <li><a class="dropdown-item" href="#">Pilfer 100cc</a></li>
-            <li><a class="dropdown-item" href="#">Pilfer 250cc</a></li>
-            <li><a class="dropdown-item" href="#">Pilfer 499cc</a></li>
-            <li><a class="dropdown-item" href="#">Pilfer 500cc</a></li>
-            <li><a class="dropdown-item" href="#">Pilfer 1000cc</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">TODOS</a></li>
-          </ul>
-        </li>
+          <!-- boton de cilindricos -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-white"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Cilindricos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cilindrico 70cc</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Cilindrico 100cc</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Cilindrico 120cc</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Cilindrico 250cc</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">TODOS</a></li>
+            </ul>
+          </li>
 
-        <!-- boton de cilindricos -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-white"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Cilindricos
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Cilindrico 70cc</a></li>
-            <li>
-              <a class="dropdown-item" href="#">Cilindrico 100cc</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Cilindrico 120cc</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Cilindrico 250cc</a>
-            </li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">TODOS</a></li>
-          </ul>
-        </li>
+          <!-- boton de potes -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-white"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Potes
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Pote 30cc</a></li>
+              <li><a class="dropdown-item" href="#">Pote 100cc</a></li>
+              <li><a class="dropdown-item" href="#">Pote 125cc</a></li>
+              <li><a class="dropdown-item" href="#">Pote 200cc</a></li>
+              <li><a class="dropdown-item" href="#">Pote 250cc</a></li>
+              <li><a class="dropdown-item" href="#">Pote 300cc</a></li>
+              <li><a class="dropdown-item" href="#">Pote 500cc</a></li>
+              <li><a class="dropdown-item" href="#">Pote 550cc</a></li>
+              <li><a class="dropdown-item" href="#">Pote 1000cc</a></li>
+              <li><a class="dropdown-item" href="#">Pote 2000cc</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">TODOS</a></li>
+            </ul>
+          </li>
 
-        <!-- boton de potes -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-white"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Potes
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Pote 30cc</a></li>
-            <li><a class="dropdown-item" href="#">Pote 100cc</a></li>
-            <li><a class="dropdown-item" href="#">Pote 125cc</a></li>
-            <li><a class="dropdown-item" href="#">Pote 200cc</a></li>
-            <li><a class="dropdown-item" href="#">Pote 250cc</a></li>
-            <li><a class="dropdown-item" href="#">Pote 300cc</a></li>
-            <li><a class="dropdown-item" href="#">Pote 500cc</a></li>
-            <li><a class="dropdown-item" href="#">Pote 550cc</a></li>
-            <li><a class="dropdown-item" href="#">Pote 1000cc</a></li>
-            <li><a class="dropdown-item" href="#">Pote 2000cc</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">TODOS</a></li>
-          </ul>
-        </li>
+          <!-- boton de goteros -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-white"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Goteros
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Gotero 15cc</a></li>
+              <li><a class="dropdown-item" href="#">Gotero 20cc</a></li>
+              <li><a class="dropdown-item" href="#">Gotero 30cc</a></li>
+              <li><a class="dropdown-item" href="#">Gotero 50cc</a></li>
+              <li><a class="dropdown-item" href="#">Gotero 100cc</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">TODOS</a></li>
+            </ul>
+          </li>
 
-        <!-- boton de goteros -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-white"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Goteros
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Gotero 15cc</a></li>
-            <li><a class="dropdown-item" href="#">Gotero 20cc</a></li>
-            <li><a class="dropdown-item" href="#">Gotero 30cc</a></li>
-            <li><a class="dropdown-item" href="#">Gotero 50cc</a></li>
-            <li><a class="dropdown-item" href="#">Gotero 100cc</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">TODOS</a></li>
-          </ul>
-        </li>
-
-        <!-- boton de talquera-->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-white"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Talqueras
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Talquera 30cc</a></li>
-            <li><a class="dropdown-item" href="#">Talquera 60cc</a></li>
-            <li><a class="dropdown-item" href="#">Talquera 80cc</a></li>
-            <li><a class="dropdown-item" href="#">Talquera 250cc</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">TODOS</a></li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+          <!-- boton de talquera-->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-white"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Talqueras
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Talquera 30cc</a></li>
+              <li><a class="dropdown-item" href="#">Talquera 60cc</a></li>
+              <li><a class="dropdown-item" href="#">Talquera 80cc</a></li>
+              <li><a class="dropdown-item" href="#">Talquera 250cc</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">TODOS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
     </header>
 
     <!-- carrousel de fotos -->
-    <main>
-      <div
+    <main class="main">
+      <section 
         id="carouselExampleAutoplaying"
-        class="carousel slide  "
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
+        class="carousel slide"
+        data-bs-ride="carouse1"
+        >
+        <article class="carousel-inner">
           <div class="carousel-item active">
             <img
               src="assets/images/central2.webp"
@@ -215,7 +244,7 @@
               alt="central3"
             />
           </div>
-        </div>
+        </article>
         <button
           class="carousel-control-prev"
           type="button"
@@ -234,43 +263,88 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
-      <section>
-        <div class="container my-4">
+      </section>
+
+
+<!-- lista grid de 6 productos -->
+      <section class="sixgrid">
+        <article class="container my-4">
           <!-- Fila de imágenes -->
-          <div class="row g-3">
-              <!-- Cada columna tiene un tamaño igual (col-4 para 3 imágenes por fila) -->
-              <div class="col-4"><a href="" target="_blank"> <img src="assets/images/potes.png" alt="Imagen 1" class="img-fluid rounded"></a>
-                  
-              </div>
-              <div class="col-4"><a href="" target="_blank"><img src="assets/images/botellas.png" alt="Imagen 2" class="img-fluid rounded"> </a>
-                  
-              </div>
-              <div class="col-4"><a href="" target="_blank"> <img src="assets/images/goteros.png" alt="Imagen 3" class="img-fluid rounded"></a>
-                  
-              </div>
-  
-              <div class="col-4"><a href="" target="_blank"><img src="assets/images/vainilleros.webp" alt="Imagen 4" class="img-fluid rounded"> </a>
-                  
-              </div>
-              <div class="col-4"><a href="" target="_blank"> <img src="assets/images/bidones.webp" alt="Imagen 5" class="img-fluid rounded"></a>
-                  
-              </div>
-              <div class="col-4"><a href="" target="_blank">
-                <img src="assets/images/tapers.webp" alt="Imagen 6" class="img-fluid rounded">
+          <div class="row g-1 justify-content-center">
+            <!-- Cada columna tiene un tamaño igual (col-4 para 3 imágenes por fila) -->
+            <div class="grid-images col-3">
+              <a href="" target="_blank">
+                <img
+                  src="assets/images/potes.png"
+                  alt="Imagen 1"
+                  class="img-fluid rounded"
+              /></a>
+            </div>
+            <div class="grid-images col-3">
+              <a href="" target="_blank"
+                ><img
+                  src="assets/images/botellas.png"
+                  alt="Imagen 2"
+                  class="img-fluid rounded"
+                />
               </a>
             </div>
+            <div class="grid-images col-3">
+              <a href="" target="_blank">
+                <img
+                  src="assets/images/goteros.png"
+                  alt="Imagen 3"
+                  class="img-fluid rounded"
+              /></a>
+            </div>
           </div>
-      </div>
+          <div class="row g-2 justify-content-center">
+            <div class="grid-images col-3">
+              <a href="" target="_blank"
+                ><img
+                  src="assets/images/vainilleros.webp"
+                  alt="Imagen 4"
+                  class="img-fluid rounded"
+                />
+              </a>
+            </div>
+            <div class="grid-images col-3">
+              <a href="" target="_blank">
+                <img
+                  src="assets/images/bidones.webp"
+                  alt="Imagen 5"
+                  class="img-fluid rounded"
+              /></a>
+            </div>
+            <div class="grid-images col-3">
+              <a href="" target="_blank">
+                <img
+                    src="assets/images/tapers.webp"
+                    alt="Imagen 6"
+                    class="img-fluid rounded"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
       </section>
+      <!-- fin lista grid de 6 productos -->
     </main>
-    <footer>
-  
-
-
-
-
-
+    <footer class="footer">
+      <section class="footer__section font-monospace">
+        <h1 class="footer__section--h1 " >NEWSLETTER</h1>
+        <h2 class="footer__section--h2 ">Recibí todas las ofertas</h2>
+        <p class="footer__section--p ">¿Quieres recibir nuestras ofertas? ¡Regístrate ya mismo y comienza a disfrutarlas!
+        </p>
+        <input class="footer__section--browser font-monospace" type="email" placeholder="Email... ">
+        <button class="footer__section--button">
+          <img
+          src="assets/images/iconos/flecha derecha.svg"
+          alt="flecha"
+          />
+        </button>
+      </section>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -279,8 +353,4 @@
     ></script>
   </body>
 </html>
-<!--   <button
-class="navbar-toggler"type="button"data-bs-toggle="collapse"data-bs-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation">
- boton de 3 linieas para pantalla chica 
-<span class="navbar-toggler-icon"></span>
-</button> -->
+
