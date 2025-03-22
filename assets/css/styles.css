@@ -1,3 +1,4 @@
+/* body */
 .body_top {
     font-family: "Nunito", sans-serif;
     background-color: #62c3c7;
@@ -6,6 +7,9 @@
     height: auto;
     width: auto;
 }
+/* body */
+
+/* header */
 .header-middle {
     position: sticky;
     right: 0;
@@ -15,24 +19,39 @@
     background-color: #62c3c7;
     height: auto;
 }
+/* header */
+
+/* contenedor de filas de header */
 .header-middle__top {
     display: flex;
     flex-direction: column;
     height: auto;
 }
+/* contenedor de filas de header */
+
+/* modelos desplegables */
 .header-middle__bottom {
     display: flex;
     flex-direction: column;
     height: auto;
 }
+/* modelos desplegables */
+
+/* primera fila de header */
 .container-fluid__top {
     font-size: 12px;
     height: 20px;
 }
+/* primera fila de header */
+
+/* segunda fila de header */
 .navbar{
     display: flex;
     justify-content: space-evenly;
 }
+/* segunda fila de header */
+
+/* logo onlyplast */
 .navbar__logo{
     height: auto;
 }
@@ -40,59 +59,85 @@
     height: 60px;
     width: auto;
 }
+/* logo onlyplast */
+
+/* buscador */
 .browser {
     overflow: visible;
 }
 .form-control{ 
     font-size: small;
-    /*width: 800px;  */
     height: 30px;
 }
+/* buscador */
+
+/* cajon de botones */
 .buttons {
     display: flex;
     gap: 40px;
-}
-.buttons__ayuda {
-    border: none;
-    background-color: #62c3c7;
-    padding-top: 10px;
-}
-.buttons__usuario {
-    border: none;
-    background-color: #62c3c7;
-    padding-top: 10px;
-}
-.buttons__carrito {
-    border: none;
-    background-color: #62c3c7;
-    padding-top: 10px;
 }
 .buttonx3{
     display: flex;
     font-size: smaller;
     align-items: center;
 }
+/* boton de ayuda */
+.buttons__ayuda {
+    border: none;
+    background-color: #62c3c7;
+    padding-top: 10px;
+}
 .buttons__ayuda:hover {
     background-color: #4fa2a5;
     border-radius: 15px;
     height: auto;
 }
-.buttons__carrito:hover {
-    background-color: #4fa2a5;
-    border-radius: 15px;
-    height: auto;
+/* boton de ayuda */
+/* boton de usuario */
+.buttons__usuario {
+    border: none;
+    background-color: #62c3c7;
+    padding-top: 10px;
 }
 .buttons__usuario:hover {
     background-color: #4fa2a5;
     border-radius: 15px;
     height: auto;
 }
+/* boton de usuario */
+/* boton de carrito */
+.buttons__carrito {
+    border: none;
+    background-color: #62c3c7;
+    padding-top: 10px;
+}
+.buttons__carrito:hover {
+    background-color: #4fa2a5;
+    border-radius: 15px;
+    height: auto;
+}
+/* boton de carrito */
+
+/* cajon de botones */
+
+.menu{
+    list-style-type: none;
+    display:none;
+}
+.modelos{
+    display:none;
+}
+
+/* linea divisora oscura */
 .divisor {
     width: 100%;
     height: 1px;
     background-color: #92ffed;
     filter: brightness(80%);
 }
+/* linea divisora oscura */
+
+/* modelos desplegables */
 .nav {
     height: auto;
 }
@@ -107,6 +152,9 @@
 .dropdown-menu{
     font-size: x-small;
 }
+/* modelos desplegables */
+
+/* carrousel de fotos */
 .main-main{
     display: flex;
     flex-direction: column;
@@ -118,11 +166,9 @@
     padding: 1;
     margin: 1;
 }
-.sixgrid{
-    background-color: white;
-    padding: 0px;
-    margin: 0px;
-}
+/* carrousel de fotos */
+
+/* lista grid de 6 productos */
 .grid-images{
     margin-bottom: 50px;
     padding: 10px;
@@ -131,6 +177,26 @@
     max-width: max-content;
     margin: 0 auto
 }
+.sixgrid{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+.sixgrid2{
+    display:none;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+.sixgrid3{
+    display: none;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+/* lista grid de 6 productos */
+
+/* newsletter footer */
 .footer {
     background-color: #62c3c7;
     color: white;
@@ -173,32 +239,19 @@
     margin-bottom: 0px;    
     cursor: pointer;
 }
-.menu{
-    list-style-type: none;
-    display:none;
-}
-.modelos{
-    display:none;
-}
-.sixgrid2{
-    display:none;
-    background-color: white;
-    padding: 0px;
-    margin: 0px;
-}
-.sixgrid3{
-    display: none;
-    background-color: white;
-    padding: 0px;
-    margin: 0px;
-}
+/* newsletter footer */
 
+/* Media queries 575.98px */
 @media (max-width: 575.98px) { 
+/* primera fila de header */
     .container-fluid__top {
         font-size: 10px;
         height: auto;
         padding-top: 15px;
     }
+/* primera fila de header */
+
+/* segunda fila de header */
     .navbar{
         display: flex;
         flex-direction: column;
@@ -206,23 +259,33 @@
         height: auto;
         width: auto;
     }
+/* segunda fila de header */
+
+/* logo onlyplast */
     .navbar__logo--only {
         width: 100%;
-    }    
+    }  
+/* logo onlyplast */
+
+/* buscador */
     .browser{
         display: flex;
         justify-content: center;
         height: auto;
         width: 100%;
     }
+    
+    .form-control{
+        width: 80%;
+    }
     .browser__search{
         display: flex;
         justify-content: center;
         width: 100%;
     }
-    .form-control{
-        width: 80%;
-    }
+/* buscador */
+
+/* cajon de botones */
     .buttons{
         display: flex;
         flex-direction: row;
@@ -254,9 +317,6 @@
         display: block;
         height: 35px;
     }
-    .header-middle__bottom{
-        display: none;
-    }
     .modelos:hover{
         background-color: #4fa2a5;
         border-radius: 15px;
@@ -269,6 +329,14 @@
     .modelos__ul{
         text-align: center;
     }
+/* cajon de botones */
+
+/* modelos desplegables */
+    .header-middle__bottom{
+        display: none;
+    }
+/* modelos desplegables */
+/* lista grid de 6 productos */
     .sixgrid{
         display: none;
     }
@@ -278,14 +346,21 @@
     .sixgrid3{
         display: none;
     }
+/* lista grid de 6 productos */
 }
+/* Media queries 575.98px */
 
+/* Media queries 575.98px a 799.98px */
 @media (min-width: 575.99px) and (max-width: 799.98px) {
+    /* primera fila de header */
     .container-fluid__top {
         font-size: 10px;
         height: auto;
         padding-top: 15px;
     }
+    /* primera fila de header */
+
+    /* segunda fila de header */
     .navbar{
         display: flex;
         flex-direction: column;
@@ -293,9 +368,15 @@
         height: auto;
         width: auto;
     }
+    /* segunda fila de header */
+    
+    /* logo onlyplast */
     .navbar__logo--only {
         width: 100%;
     }    
+    /* logo onlyplast */
+
+    /* buscador */
     .browser{
         display: flex;
         justify-content: center;
@@ -310,6 +391,9 @@
     .form-control{
         width: 80%;
     }
+    /* buscador */
+
+    /* cajon de botones */
     .buttons{
         display: flex;
         flex-direction: row;
@@ -341,9 +425,6 @@
         display: block;
         height: 35px;
     }
-    .header-middle__bottom{
-        display: none;
-    }
     .modelos:hover{
         background-color: #4fa2a5;
         border-radius: 15px;
@@ -356,6 +437,15 @@
     .modelos__ul{
         text-align: center;
     }
+    /* cajon de botones */
+
+    /* modelos desplegables */
+    .header-middle__bottom{
+        display: none;
+    }
+    /* modelos desplegables */
+    
+    /* lista grid de 6 productos */
     .sixgrid{
         display: none;
     }
@@ -365,4 +455,6 @@
     .sixgrid3{
         display:block;
     }
+    /* lista grid de 6 productos */
 }
+/* Media queries 575.98px a 799.98px */
