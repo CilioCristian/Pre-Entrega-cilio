@@ -1,0 +1,43 @@
+.sixgrid,
+.sixgrid2,
+.sixgrid3 {
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    .container {
+        max-width: max-content;
+        margin: 0 auto;
+        .row {
+            .grid-images {
+                margin-bottom: 50px;
+                padding: 10px;
+            }
+        }
+    }       
+}
+.sixgrid2,
+.sixgrid3 {
+    display: none;
+}
+@media (max-width: 575.98px){
+    .sixgrid,
+    .sixgrid3 {
+        display: none;
+    }
+    .sixgrid2 {
+        display: block;
+    }
+    
+}
+
+@media (min-width: 575.99px) and (max-width: 766px){
+    .sixgrid,
+    .sixgrid2 {
+        display: none;
+    }
+    .sixgrid3 {
+        display: block;
+    }
+
+}
+

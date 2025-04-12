@@ -1,0 +1,32 @@
+/* modelos desplegables */
+.nav{
+    /* items desplegables */
+    &-item{
+        height: auto;
+        .btn{
+            font-size: 14px;
+            background-color: #62c3c7;
+            border-radius: 30px;
+            height: auto;
+            border: none;
+            &:hover{
+                background-color: #4fa2a5;
+                border-radius: 30px;
+                height: auto;
+            }
+        }
+    }
+    /* items desplegables */
+}
+
+@media (max-width: 575.98px){
+    .btn{
+        display: none;
+    }
+}
+@media (min-width: 575.99px) and (max-width: 766px){
+    .btn{
+        display: none;
+    }
+}
+

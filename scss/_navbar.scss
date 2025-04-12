@@ -1,0 +1,121 @@
+.navbar{
+    display: flex;
+    &__logo{
+        height: auto;
+        &--only{
+            height: 60px;
+            width: auto;
+        }
+    }
+    .browser{
+        overflow: visible;
+        &__search{
+            .form-control{
+                font-size: small;
+                height: 30px;
+            }
+        }
+    }
+    .buttons{
+        display: flex;
+        gap: 40px;
+        &__x3{
+            display: flex;
+            font-size: x-small;
+            align-items: center;
+            border: none;
+            background-color: #62c3c7;
+            &--individual{  
+                background-color: #62c3c7;
+                padding-top: 10px;
+                border: none;
+                width: 70px;
+                &:active{
+                    border: none;
+                    background-color: #4fa2a5;
+                    border-radius: 30%;
+                    height: 60px;
+                }
+
+            }
+        }
+    }
+}
+@media (max-width: 575.98px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        height: auto;
+        width: auto;
+        &__logo{
+            height: auto;
+            &--only{
+                width: 100%;
+            }
+        }
+        .browser{
+            display: flex;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+            &__search{
+                display: flex;
+            justify-content: center;
+            width: 100%;
+                .form-control{
+                    width: 80%;
+                }
+            }
+        }
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+            &__x3{
+                display:none;
+            }
+        }
+    }
+}
+@media (min-width: 575.99px) and (max-width: 766px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        height: auto;
+        width: auto;
+        &__logo{
+            &--only{
+                width: 100%;
+            }
+        }
+        .browser{
+            display: flex;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+            &__search{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                .form-control{
+                    width: 80%;
+                }
+            }
+        }
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+            &__x3{
+                display:none;
+            }
+        }
+    }
+
+}

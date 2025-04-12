@@ -10,10 +10,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <!--  body  --><!--  body  --><!--  body  -->
-  <body class="body-top">
+  <body class="body_top">
     <!-- header --><!-- header --><!-- header -->
     <header class="header-middle">
       <!-- contenedor de filas de header --><!-- contenedor de filas de header --><!-- contenedor de filas de header -->
@@ -38,7 +38,6 @@
                 </a>
             </article>
             <!-- final logo onlyplast --><!-- final logo onlyplast --><!-- final logo onlyplast -->
-
             <!-- buscador --><!-- buscador --><!-- buscador -->
             <article class="browser font-monospace flex-grow-1 mx-3 ">
               <div class="browser__search " role="search">
@@ -51,44 +50,21 @@
               </div>
             </article>
             <!-- final buscador --><!-- final buscador --><!-- final buscador -->
-
-            <!-- Menu de queries --><!-- Menu de queries --><!-- Menu de queries -->
-            <article class="menu font-monospace "style="width: 100%;">
-              <li class="menu__d dropdown " style="width: 100%;">
-                <p
-                  class="menu-link dropdown-toggle text-white "
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Menu
-                </a>
-                <ul class="dropdown-menu "style="width: 100%;">
-                  <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
-                  <li><a class="dropdown-item" href="#">Mi Carrito</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Ayuda</a></li>
-                </ul>
-              </li>
-            </article>
-            <!-- final Menu de queries --><!-- final Menu de queries --><!-- final Menu de queries -->
-            
             <!-- cajon de botones --><!-- cajon de botones --><!-- cajon de botones -->
             <article class="buttons d-flex">
               <!-- boton de ayuda --><!-- boton de ayuda -->
               <div class="buttons__x3 mx-1 ">
-                <button type="button" class="buttons__x3--ayuda  text-white font-monospace">
+                <button type="button" class="buttons__x3--individual  text-white font-monospace">
                   <img
                   src="assets/images/iconos/ayuda.svg"
                   alt="flecha"
-                  /><p class="">Ayuda</p>
+                  /><p>Ayuda</p>
                 </button>
               </div>
               <!-- final boton de ayuda --><!-- final boton de ayuda -->
               <!-- boton de usuario --><!-- boton de usuario -->
               <div class="buttons__x3 mx-1">
-                <button type="button" class="buttons__x3--usuario  text-white font-monospace">
+                <button type="button" class="buttons__x3--individual  text-white font-monospace">
                   <img src="assets/images/iconos/usuario.svg"alt="flecha"
                   /><p>Mi cuenta</p>
                 </button>
@@ -96,7 +72,7 @@
               <!-- final boton de usuario --><!-- final boton de usuario -->
               <!-- boton de mi carrito --><!-- boton de mi carrito -->
               <div class="buttons__x3 mx-1">
-                <button type="button" class="buttons__x3--carrito  text-white font-monospace">
+                <button type="button" class="buttons__x3--individual  text-white font-monospace">
                   <img
                   src="assets/images/iconos/carrito.svg"
                   alt="flecha"
@@ -106,8 +82,62 @@
               <!-- final boton de mi carrito --><!-- final boton de mi carrito -->
             </article>
             <!-- final cajon de botones --><!-- final cajon de botones --><!-- final cajon de botones -->
+            <!-- Menu de queries --><!-- Menu de queries --><!-- Menu de queries -->
+
+
+            <article class="menu font-monospace "style="width: 100%;">
+              <li class="menu__d dropdown " style="width: 100%;">
+                <p
+                  class="menu__d--link dropdown-toggle text-white "
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  MENU
+                </p>
+                <ul class="dropdown-menu "style="width: 100%;">
+                  <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
+                  <li><a class="dropdown-item" href="#">Mi Carrito</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Ayuda</a></li>
+                </ul>
+              </li>
+            </article>
+            <!-- final Menu de queries --><!-- final Menu de queries --><!-- final Menu de queries -->
+            <!-- modelos de queries  --><!-- modelos de queries  --><!-- modelos de queries  -->
+          <article class="modelos ">
+            <ul class="nav justify-content-center p-0 mb-0 font-monospace " style="width: 100%;">
+              <li class="nav-item dropdown "style="width: 100%;">
+                <a
+                  class="nav-link  dropdown-toggle text-white "
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                MODELOS
+                </a>
+                <ul class="dropdown-menu "style="width: 100%;">
+                  <li><a class="dropdown-item " href="Pages/Potes.html">Potes</a></li>
+                  <li><a class="dropdown-item" href="Pages/Botellas.html">Botellas</a></li>
+                  <li><a class="dropdown-item" href="Pages/Goteros.html">Goteros</a></li>
+                  <li><a class="dropdown-item" href="Pages/Vainilleros.html">Vainilleros</a></li>
+                  <li><a class="dropdown-item" href="Pages/Bidones.html">Bidones</a></li>
+                  <li><a class="dropdown-item" href="Pages/Tapers.html">Tapers</a></li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+
+
+
+
+
           </nav>
           <!-- segunda fila de header --><!-- segunda fila de header --><!-- segunda fila de header -->
+          
+      <!-- final modelos de queries  --><!-- final modelos de queries  --><!-- final modelos de queries  -->
       </section>
       <!-- final contenedor de filas de header --><!-- final contenedor de filas de header --><!-- final contenedor de filas de header -->
       
@@ -115,32 +145,7 @@
       <div class="divisor"></div>
       <!-- final linea divisora oscura --><!-- final linea divisora oscura --><!-- final linea divisora oscura -->
 
-      <!-- modelos de queries  --><!-- modelos de queries  --><!-- modelos de queries  -->
-      <article class="modelos">
-        <div class="modelos__ul">
-          <ul class="nav justify-content-center p-0 mb-0 font-monospace " style="width: 100%;">
-            <li class="nav-item dropdown "style="width: 100%;">
-              <a
-                class="nav-link dropdown-toggle text-white "
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                MODELOS
-              </a>
-              <ul class="dropdown-menu "style="width: 100%;">
-                <li><a class="dropdown-item " href="Pages/Potes.html">Potes</a></li>
-                <li><a class="dropdown-item" href="Pages/Botellas.html">Botellas</a></li>
-                <li><a class="dropdown-item" href="Pages/Goteros.html">Goteros</a></li>
-                <li><a class="dropdown-item" href="Pages/Vainilleros.html">Vainilleros</a></li>
-                <li><a class="dropdown-item" href="Pages/Bidones.html">Bidones</a></li>
-                <li><a class="dropdown-item" href="Pages/Tapers.html">Tapers</a></li>
-              </ul>
-            </li>
-        </div>
-      </article>
-      <!-- final modelos de queries  --><!-- final modelos de queries  --><!-- final modelos de queries  -->
+
       <!-- modelos desplegables --><!-- modelos desplegables --><!-- modelos desplegables -->
       <section class="header-middle__bottom ">
         <ul class="nav justify-content-center p-0 mb-0 font-monospace">
@@ -183,9 +188,8 @@
         
       </section>
       <!-- final modelos desplegables --><!-- final modelos desplegables --><!-- final modelos desplegables -->
-    </header>
+      </header>
     <!-- final header final header final header final header final header final header final header final header final header final header final header final -->
-
 
       <!-- lista grid de 6 productos --><!-- lista grid de 6 productos --><!-- lista grid de 6 productos -->
       <section class="sixgrid">
@@ -255,7 +259,7 @@
         <article class="container my-4">
           <div class="row g-1 justify-content-center">
             <div class="grid-images col-9">
-              <a href="" target="_blank">
+              <a href="Pages/Potes.html">
                 <img
                   src="assets/images/potes.png"
                   alt="Imagen 1"
@@ -265,8 +269,7 @@
           </div>
           <div class="row g-2 justify-content-center">
             <div class="grid-images col-9">
-              <a href="" target="_blank"
-                ><img
+              <a href="Pages/Botellas.html"><img
                   src="assets/images/botellas.png"
                   alt="Imagen 2"
                   class="img-fluid rounded"
@@ -276,7 +279,7 @@
           </div>
           <div class="row g-3 justify-content-center">
             <div class="grid-images col-9">
-              <a href="" target="_blank">
+              <a href="Pages/Goteros.html">
                 <img
                   src="assets/images/goteros.png"
                   alt="Imagen 3"
@@ -284,30 +287,29 @@
               /></a>
             </div>
           </div>
-            <div class="row g-4 justify-content-center">
+          <div class="row g-4 justify-content-center">
               <div class="grid-images col-9">
-              <a href="" target="_blank"
-                ><img
+              <a href="Pages/Vainilleros.html"><img
                   src="assets/images/vainilleros.webp"
                   alt="Imagen 4"
                   class="img-fluid rounded"
                 />
               </a>
               </div>
-            </div>
-            <div class="row g-5 justify-content-center">
+          </div>
+          <div class="row g-5 justify-content-center">
               <div class="grid-images col-9">
-              <a href="" target="_blank">
+              <a href="Pages/Bidones.html">
                 <img
                   src="assets/images/bidones.webp"
                   alt="Imagen 5"
                   class="img-fluid rounded"
               /></a>
               </div>
-            </div>
-            <div class="row g-6 justify-content-center">
+          </div>
+          <div class="row g-6 justify-content-center">
               <div class="grid-images col-9">
-                <a href="" target="_blank">
+                <a href="Pages/Tapers.html">
                   <img
                   src="assets/images/tapers.webp"
                   alt="Imagen 6"
@@ -315,7 +317,7 @@
                   />
                 </a>
               </div>
-            </div>
+          </div>
         </article>
       </section>
       <!-- final lista grid de 6 productos queries --><!-- final lista grid de 6 productos queries --><!-- final lista grid de 6 productos queries -->
@@ -325,7 +327,7 @@
         <article class="container my-4">
           <div class="row g-1 justify-content-center">
             <div class="grid-images col-5">
-              <a href="" target="_blank">
+              <a href="Pages/Potes.html">
                 <img
                   src="assets/images/potes.png"
                   alt="Imagen 1"
@@ -333,8 +335,7 @@
               /></a>
             </div>
             <div class="grid-images col-5">
-              <a href="" target="_blank"
-                ><img
+              <a href="Pages/Botellas.html"><img
                   src="assets/images/botellas.png"
                   alt="Imagen 2"
                   class="img-fluid rounded"
@@ -344,7 +345,7 @@
           </div>  
           <div class="row g-2 justify-content-center">
             <div class="grid-images col-5">
-              <a href="" target="_blank">
+              <a href="Pages/Goteros.html">
                 <img
                   src="assets/images/goteros.png"
                   alt="Imagen 3"
@@ -352,8 +353,7 @@
               /></a>
             </div>
               <div class="grid-images col-5">
-              <a href="" target="_blank"
-                ><img
+              <a href="Pages/Vainilleros.html"><img
                   src="assets/images/vainilleros.webp"
                   alt="Imagen 4"
                   class="img-fluid rounded"
@@ -363,7 +363,7 @@
             </div>
             <div class="row g-3 justify-content-center">
               <div class="grid-images col-5">
-              <a href="" target="_blank">
+              <a href="Pages/Bidones.html">
                 <img
                   src="assets/images/bidones.webp"
                   alt="Imagen 5"
@@ -371,7 +371,7 @@
               /></a>
               </div>         
               <div class="grid-images col-5">
-                <a href="" target="_blank">
+                <a href="Pages/Tapers.html">
                   <img
                   src="assets/images/tapers.webp"
                   alt="Imagen 6"
@@ -383,8 +383,7 @@
         </article>
       </section>
       <!-- final lista grid de 6 productos queries 2--><!-- final lista grid de 6 productos queries 2--><!-- final lista grid de 6 productos queries 2-->
-    </main>
-    <!-- final carrousel de fotos --><!-- final carrousel de fotos --><!-- final carrousel de fotos -->
+    
     <!-- newsletter footer --><!-- newsletter footer --><!-- newsletter footer -->
     <footer class="footer">
       <section class="footer__section font-monospace">

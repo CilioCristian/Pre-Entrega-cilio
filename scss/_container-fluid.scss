@@ -1,0 +1,22 @@
+.container-fluid {
+    &__top{
+        font-size: 12px;
+        height: 20px;
+    }
+}
+@media (max-width: 575.98px){
+    .container-fluid {
+        &__top{
+            font-size: 9px;
+            height: 15px;
+        }
+    }
+}
+@media (min-width: 575.99px) and (max-width: 766px){
+    .container-fluid{
+        &__top {
+        font-size: 12px;
+        height: 20px;
+        }
+    }
+}

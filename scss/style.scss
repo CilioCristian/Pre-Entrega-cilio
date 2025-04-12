@@ -1,0 +1,41 @@
+@import "grids"; // LISTO y queries
+@import "footer"; // LISTO y queries
+@import "PrincipalButtons"; // LISTO y queries
+@import "container-fluid"; // LISTO y queries
+@import "navbar"; //listo y queries
+@import "menu-y-modelos-desplegables"; // listo y queries
+@import "modelos-individuales"; // listo y queries
+
+.body_top{
+    font-family: "Nunito", sans-serif;
+    background-color: #62c3c7;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    .header-middle{
+        position: sticky;
+        right: 0;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: #62c3c7;
+        height: auto;
+        &__top{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }   
+        .divisor{
+            width: 100%;
+            height: 1px;
+            background-color: #92ffed;
+            filter: brightness(80%);
+        }
+        &__bottom{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+    }
+}
