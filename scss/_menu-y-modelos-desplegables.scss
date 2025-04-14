@@ -36,7 +36,8 @@
 @media (min-width: 575.99px) and (max-width: 766px){
         
         .menu{
-
+            display: block;
+            list-style-type: none;
             padding: 10px;
             height: 45px;
             &:hover{
@@ -53,8 +54,9 @@
             }
         }
         .modelos{
-
-            height: 35px;
+            display: block;
+            list-style-type: none;
+            height: 45px;
             &:hover{
                 background-color: #4fa2a5;
                 border-radius: 15px;
