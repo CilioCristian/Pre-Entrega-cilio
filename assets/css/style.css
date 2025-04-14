@@ -322,11 +322,13 @@
 }
 .foto {
   display: flex;
+  background-color: white;
+  justify-content: center;
+  padding: 15px;
 }
 
 .foto__edit {
   display: flex;
-  padding: 10px;
   width: 100%;
   height: 100%;
   border-radius: 25px;

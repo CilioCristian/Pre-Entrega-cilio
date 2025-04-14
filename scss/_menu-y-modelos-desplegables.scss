@@ -9,32 +9,30 @@
     text-align: center;
 }
 @media (max-width: 575.98px){
-        .menu{
-            display: block;
-            list-style-type: none;
-            padding: 10px;
+    .menu{
+        display: block;
+        list-style-type: none;
+        padding: 10px;
+        height: 45px;
+        &:hover{
+            background-color: #4fa2a5;
+            border-radius: 15px;
             height: 45px;
-            &:hover{
-                background-color: #4fa2a5;
-                border-radius: 15px;
-                height: 45px;
-                cursor: pointer;
-            }
-
+            cursor: pointer;
         }
-        .modelos{
-            display: block;
-            list-style-type: none;
+        }
+    .modelos{
+        display: block;
+        list-style-type: none;
+        height: 45px;
+        &:hover{
+            background-color: #4fa2a5;
+            border-radius: 15px;
             height: 45px;
-            &:hover{
-                background-color: #4fa2a5;
-                border-radius: 15px;
-                height: 45px;
-                cursor: pointer;
-            }
- 
-            }
+            cursor: pointer;
         }
+    }
+}
 @media (min-width: 575.99px) and (max-width: 766px){
         
         .menu{
