@@ -1,17 +1,32 @@
-.foto{
+
+    .caja-del-slider {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        background: white;
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        display: flex;
+        animation: scroll 60s linear infinite;
+        width: max-content;
+    }
+    .caja-del-slider__slider {
     display: flex;
-    background-color: white;
-    justify-content: center;
-    padding: 15px;
+    img {
+        width: 500px;
+        height: auto;
+        object-fit: cover;
+        flex-shrink: 0;
+        margin: 20px;
 
+        view-timeline-name: --reveal;
 
+        animation-name: show;
+        animation-fill-mode: both;
 
+        animation-timeline: --reveal;
+        animation-range: entry 25% cover 50%;
 
-}
-.foto__edit{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-
-}
+    }
+    }

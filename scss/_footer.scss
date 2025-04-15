@@ -35,10 +35,13 @@
         border: none;
         border-radius: 10px;
         cursor: pointer;
-        &:active{
+        &:focus{
+          animation: rotate-scale-down-vertical 0.4s linear both;
           background-color: #4fa2a5;
+          
         }
       }
     }
   }
+  
   /* newsletter footer */

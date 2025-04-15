@@ -1,6 +1,6 @@
-.sixgrid,
-.sixgrid2,
-.sixgrid3 {
+.primer_grid,
+.segundo_grid,
+.tercer_grid {
     background-color: white;
     padding: 0px;
     margin: 0px;
@@ -15,27 +15,27 @@
         }
     }       
 }
-.sixgrid2,
-.sixgrid3 {
+.segundo_grid,
+.tercer_grid {
     display: none;
 }
 @media (max-width: 575.98px){
-    .sixgrid,
-    .sixgrid3 {
+    .primer_grid,
+    .tercer_grid {
         display: none;
     }
-    .sixgrid2 {
+    .segundo_grid {
         display: block;
     }
     
 }
 
 @media (min-width: 575.99px) and (max-width: 766px){
-    .sixgrid,
-    .sixgrid2 {
+    .primer_grid,
+    .segundo_grid {
         display: none;
     }
-    .sixgrid3 {
+    .tercer_grid {
         display: block;
     }
 

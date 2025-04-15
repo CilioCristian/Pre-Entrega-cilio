@@ -11,14 +11,40 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      #activar-giro {
+        display: none;
+      }
+    
+      .zona-libre {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+      .btn-giratorio {
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+    
+      #activar-giro:checked + .zona-libre .btn-giratorio {
+        animation: girar 1s linear infinite;
+      }
+    
+      @keyframes girar {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    
   </head>
-  <!--  body  --><!--  body  --><!--  body  -->
-  <body class="body_top">
-    <!-- header --><!-- header --><!-- header -->
-    <header class="header-middle">
-      <!-- contenedor de filas de header --><!-- contenedor de filas de header --><!-- contenedor de filas de header -->
-      <section class="header-middle__top">
-        <!-- primera fila de header --><!-- primera fila de header --><!-- primera fila de header -->
+  <body class="todo_el_codigo">
+    <header class="encabezado">
+      <section class="encabezado__superior">
+
         <section class="container-fluid bg-black d-flex justify-content-center ">
           <article class="container-fluid__top d-flex">
             <p class="font-monospace text-light ">
@@ -27,18 +53,15 @@
             </p>
           </article>
         </section>
-        <!-- final de primera fila de header --><!-- final de primera fila de header --><!-- final de primera fila de header -->
-        
-          <!-- segunda fila de header --><!-- segunda fila de header --><!-- segunda fila de header -->
+   
           <nav class="navbar navbar-expand-lg bg-body-tertiarys d-flex justify-content-between align-items-center ">
-            <!-- logo onlyplast --><!-- logo onlyplast --><!-- logo onlyplast -->
+            
             <article class="navbar__logo">
               <a href="index.html">
                 <img src="assets/images/only.webp" alt="Logo"class="navbar__logo--only img-fluid">
                 </a>
             </article>
-            <!-- final logo onlyplast --><!-- final logo onlyplast --><!-- final logo onlyplast -->
-            <!-- buscador --><!-- buscador --><!-- buscador -->
+
             <article class="browser font-monospace flex-grow-1 mx-3 ">
               <div class="browser__search " role="search">
                 <input
@@ -49,40 +72,36 @@
                 />
               </div>
             </article>
-            <!-- final buscador --><!-- final buscador --><!-- final buscador -->
-            <!-- cajon de botones --><!-- cajon de botones --><!-- cajon de botones -->
+ 
             <article class="buttons d-flex">
-              <!-- boton de ayuda --><!-- boton de ayuda -->
+     
               <div class="buttons__x3 mx-1 ">
-                <button type="button" class="buttons__x3--individual  text-white font-monospace">
+                <button onclick="location.href='#encabezado_superior_inicio'" type="button" class="buttons__x3--individual  text-white font-monospace">
                   <img
-                  src="assets/images/iconos/ayuda.svg"
+                  src="assets/images/iconos/inicio.svg"
                   alt="flecha"
-                  /><p>Ayuda</p>
+                  /><p>Inicio</p>
                 </button>
               </div>
-              <!-- final boton de ayuda --><!-- final boton de ayuda -->
-              <!-- boton de usuario --><!-- boton de usuario -->
+
               <div class="buttons__x3 mx-1">
-                <button type="button" class="buttons__x3--individual  text-white font-monospace">
-                  <img src="assets/images/iconos/usuario.svg"alt="flecha"
-                  /><p>Mi cuenta</p>
+                <button onclick="location.href='#nosotros'" type="button" class="buttons__x3--individual  text-white font-monospace">
+                  <img src="assets/images/iconos/quienessomos.svg"alt="flecha"
+                  /><p>¿Quienes somos?</p>
                 </button>
               </div>
-              <!-- final boton de usuario --><!-- final boton de usuario -->
-              <!-- boton de mi carrito --><!-- boton de mi carrito -->
+       
               <div class="buttons__x3 mx-1">
-                <button type="button" class="buttons__x3--individual  text-white font-monospace">
+                <button onclick="location.href='#footer_contacto'" type="button" class="buttons__x3--individual  text-white font-monospace">
                   <img
-                  src="assets/images/iconos/carrito.svg"
+                  src="assets/images/iconos/contacto.svg"
                   alt="flecha"
-                  /><p>Mi carrito</p>
+                  /><p>Contacto</p>
                 </button>
               </div>
-              <!-- final boton de mi carrito --><!-- final boton de mi carrito -->
+
             </article>
-            <!-- final cajon de botones --><!-- final cajon de botones --><!-- final cajon de botones -->
-            <!-- Menu de queries --><!-- Menu de queries --><!-- Menu de queries -->
+        
 
 
             <article class="menu font-monospace "style="width: 100%;">
@@ -104,8 +123,7 @@
                 </ul>
               </li>
             </article>
-            <!-- final Menu de queries --><!-- final Menu de queries --><!-- final Menu de queries -->
-            <!-- modelos de queries  --><!-- modelos de queries  --><!-- modelos de queries  -->
+
           <article class="modelos ">
             <ul class="nav justify-content-center p-0 mb-0 font-monospace " style="width: 100%;">
               <li class="nav-item dropdown "style="width: 100%;">
@@ -129,70 +147,47 @@
               </li>
             </ul>
           </article>
-
-
-
-
-
           </nav>
-          <!-- segunda fila de header --><!-- segunda fila de header --><!-- segunda fila de header -->
-          
-      <!-- final modelos de queries  --><!-- final modelos de queries  --><!-- final modelos de queries  -->
+ 
       </section>
-      <!-- final contenedor de filas de header --><!-- final contenedor de filas de header --><!-- final contenedor de filas de header -->
-      
-      <!-- linea divisora oscura --><!-- linea divisora oscura --><!-- linea divisora oscura -->
-      <div class="divisor"></div>
-      <!-- final linea divisora oscura --><!-- final linea divisora oscura --><!-- final linea divisora oscura -->
 
-
-      <!-- modelos desplegables --><!-- modelos desplegables --><!-- modelos desplegables -->
-      <section class="header-middle__bottom ">
+      <div class="encabezado__central"></div>
+ 
+      <section class="encabezado__inferior ">
         <ul class="nav justify-content-center p-0 mb-0 font-monospace">
 
-          <!-- boton de Potes --><!-- boton de Potes -->
           <li class="nav-item"><a href="Pages/Potes.html">
             <button class="btn btn-primary">Potes</button></a>
           </li>
-          <!-- final boton de Potes --><!-- final boton de Potes -->
-
-          <!-- boton de Botellas --><!-- boton de Botellas -->
+ 
           <li class="nav-item"><a href="Pages/Botellas.html">
             <button class="btn btn-primary">Botellas</button></a>
           </li>
-          <!-- final boton de Botellas --><!-- final boton de Botellas -->
 
-          <!-- boton de Goteros --><!-- boton de Goteros -->
           <li class="nav-item"><a href="Pages/Goteros.html">
             <button class="btn btn-primary">Goteros</button></a>
           </li>
-          <!-- final boton de Goteros --><!-- final boton de Goteros -->
 
-          <!-- boton de Vainilleros --><!-- boton de Vainilleros -->
           <li class="nav-item"><a href="Pages/Vainilleros.html">
             <button class="btn btn-primary">Vainilleros</button></a>
           </li>
-          <!-- finalboton de Vainilleros --> <!-- finalboton de Vainilleros -->
 
-          <!-- boton de Bidones--><!-- boton de Bidones-->
           <li class="nav-item"><a href="Pages/Bidones.html">
             <button class="btn btn-primary">Bidones</button></a>
           </li>
-          <!-- final boton de Bidones--><!-- final boton de Bidones-->
-          <!-- boton de Tapers--><!-- boton de Tapers-->
+
           <li class="nav-item"><a href="Pages/Tapers.html">
             <button class="btn btn-primary">Tapers</button></a>
           </li>
-          <!-- final boton de Tapers--><!-- final boton de Tapers-->
+
         </ul>
         
       </section>
-      <!-- final modelos desplegables --><!-- final modelos desplegables --><!-- final modelos desplegables -->
-      </header>
-    <!-- final header final header final header final header final header final header final header final header final header final header final header final -->
 
-      <!-- lista grid de 6 productos --><!-- lista grid de 6 productos --><!-- lista grid de 6 productos -->
-      <section class="sixgrid">
+      </header>
+
+    <main id="encabezado_superior_inicio" class ="contenido">
+      <section class="primer_grid">
         <article class="container my-4">
           <div class="row g-1 justify-content-center">
             <div class="grid-images col-3">
@@ -252,10 +247,7 @@
           </div>
         </article>
       </section>
-      <!-- fin lista grid de 6 productos --><!-- fin lista grid de 6 productos --><!-- fin lista grid de 6 productos -->
-
-      <!-- lista grid de 6 productos queries --><!-- lista grid de 6 productos queries --><!-- lista grid de 6 productos queries -->
-      <section class="sixgrid2">
+      <section class="segundo_grid">
         <article class="container my-4">
           <div class="row g-1 justify-content-center">
             <div class="grid-images col-9">
@@ -320,10 +312,8 @@
           </div>
         </article>
       </section>
-      <!-- final lista grid de 6 productos queries --><!-- final lista grid de 6 productos queries --><!-- final lista grid de 6 productos queries -->
-
-      <!-- lista grid de 6 productos queries 2--><!-- lista grid de 6 productos queries 2--><!-- lista grid de 6 productos queries 2-->
-      <section class="sixgrid3">
+      
+      <section class="tercer_grid">
         <article class="container my-4">
           <div class="row g-1 justify-content-center">
             <div class="grid-images col-5">
@@ -382,14 +372,47 @@
               </div>
         </article>
       </section>
-      <!-- final lista grid de 6 productos queries 2--><!-- final lista grid de 6 productos queries 2--><!-- final lista grid de 6 productos queries 2-->
-    
-    <!-- newsletter footer --><!-- newsletter footer --><!-- newsletter footer -->
-    <footer class="footer">
+      <section id="nosotros"  class="container my-5 text-center">
+        <h2 class="mb-4 text-success">¿Quiénes Somos?</h2>
+      
+        <p class="text-muted small">
+          <strong>¡Hola!</strong> Somos <span class="fw-bold text-success">ONLYPLAST</span>, una empresa dedicada a ofrecer soluciones con envases innovadores y de alta calidad para tus productos. Con un enfoque creativo y práctico, trabajamos para transformar la forma en que las personas y las empresas, almacenan y presentan sus productos.
+        </p>
+      
+        <p class="text-muted small">
+          <strong class="text-success">Nuestra Misión:</strong> Proporcionar envases funcionales, elegantes y duraderos que protejan eficazmente lo que importa. Nos comprometemos a ofrecer productos de la más alta calidad que faciliten la vida de nuestros clientes y mejoren su experiencia al momento de almacenar y presentar sus productos.
+        </p>
+      
+        <p class="text-muted small">
+          <strong class="text-success">Nuestra Visión:</strong> Convertirnos en una referencia en la industria de los envases, destacándonos por ofrecer soluciones innovadoras que se adapten a las necesidades de cada cliente. Queremos ser el socio ideal para empresas que buscan envases prácticos, funcionales y con un diseño atractivo, sin comprometer la calidad ni la experiencia del usuario.
+        </p>
+      
+        <h5 class="text-success mt-5">Nuestros Valores:</h5>
+        <ul class="list-unstyled small text-muted">
+          <li><strong>Innovación:</strong> Buscamos nuevas ideas y soluciones creativas que mejoren la funcionalidad y el diseño de nuestros envases.</li>
+          <li><strong>Calidad:</strong> Priorizamos la excelencia en nuestros productos, asegurando que cada uno cumpla los más altos estándares.</li>
+          <li><strong>Compromiso con el cliente:</strong> Entendemos sus necesidades y trabajamos para ofrecer un servicio personalizado y excepcional.</li>
+          <li><strong>Diseño:</strong> Creemos que el diseño es clave en la experiencia del producto. Nuestros envases son prácticos y atractivos.</li>
+        </ul>
+      
+        <p class="text-muted small">
+          <strong class="text-success">Nuestro Equipo:</strong> Cada miembro aporta creatividad y experiencia para desarrollar productos que realmente marcan la diferencia. Creemos en el poder de las ideas para transformar la forma en que las personas se relacionan con los productos.
+        </p>
+      
+        <h5 class="text-success mt-5">¿Por qué elegirnos?</h5>
+        <ul class="list-unstyled small text-muted">
+          <li><strong>Variedad de productos:</strong> Amplia gama de envases adaptados a distintas necesidades y sectores.</li>
+          <li><strong>Diseño atractivo:</strong> Funcionales y estéticamente agradables, ideales para destacar.</li>
+          <li><strong>Servicio personalizado:</strong> Soluciones que se ajustan a las necesidades específicas de cada cliente.</li>
+          <li><strong>Calidad garantizada:</strong> Envases duraderos y funcionales, fabricados con materiales de alta calidad.</li>
+        </ul>
+      </section>
+    </main>
+    <footer id="footer_contacto" class="footer">
       <section class="footer__section font-monospace">
         <h1 class="footer__section--h1 " >NEWSLETTER</h1>
-        <h2 class="footer__section--h2 ">Recibí todas las ofertas</h2>
-        <p class="footer__section--p ">¿Quieres recibir nuestras ofertas? ¡Regístrate ya mismo y comienza a disfrutarlas!
+        <h2 class="footer__section--h2 ">¿Queres realizar una compra?</h2>
+        <p class="footer__section--p ">¿Quieres recibir nuestras ofertas? ¡Mandanos un email y te vamos a estar contactando!
         </p>
         <input class="footer__section--browser font-monospace" type="email" placeholder="Email... ">
         <button class="footer__section--button">
@@ -399,13 +422,16 @@
           />
         </button>
       </section>
+      
     </footer>
-    <!-- final newsletter footer --><!-- final newsletter footer --><!-- final newsletter footer -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
   </body>
-  <!--  body  --><!--  body  --><!--  body  -->
+  
+  
 </html>

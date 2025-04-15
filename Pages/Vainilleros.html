@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <!--  body  --><!--  body  --><!--  body  -->
-  <body class="body_top">
+  <body class="todo_el_codigo">
     <!-- header --><!-- header --><!-- header -->
-    <header class="header-middle">
+    <header class="encabezado">
       <!-- contenedor de filas de header --><!-- contenedor de filas de header --><!-- contenedor de filas de header -->
-      <section class="header-middle__top">
+      <section class="encabezado__superior">
         <!-- primera fila de header --><!-- primera fila de header --><!-- primera fila de header -->
         <section class="container-fluid bg-black d-flex justify-content-center ">
           <article class="container-fluid__top d-flex">
@@ -31,14 +31,12 @@
         
           <!-- segunda fila de header --><!-- segunda fila de header --><!-- segunda fila de header -->
           <nav class="navbar navbar-expand-lg bg-body-tertiarys d-flex justify-content-between align-items-center ">
-            <!-- logo onlyplast --><!-- logo onlyplast --><!-- logo onlyplast -->
-            <article class="navbar__logo">
+            <!-- logo onlyplast --><!-- logo onlyplast --><!-- logo onlyplast -->            <article class="navbar__logo">
               <a href="../index.html">
                 <img src="../assets/images/only.webp" alt="Logo"class="navbar__logo--only img-fluid">
                 </a>
             </article>
             <!-- final logo onlyplast --><!-- final logo onlyplast --><!-- final logo onlyplast -->
-
             <!-- buscador --><!-- buscador --><!-- buscador -->
             <article class="browser font-monospace flex-grow-1 mx-3 ">
               <div class="browser__search " role="search">
@@ -51,19 +49,45 @@
               </div>
             </article>
             <!-- final buscador --><!-- final buscador --><!-- final buscador -->
+            <!-- cajon de botones --><!-- cajon de botones --><!-- cajon de botones -->
+            <article class="buttons d-flex">
+              <div class="buttons__x3 mx-1 ">
+                <button onclick="location.href='#encabezado_superior_inicio'" type="button" class="buttons__x3--individual  text-white font-monospace">
+                  <img
+                  src="../assets/images/iconos/inicio.svg"
+                  alt="flecha"
+                  /><p>Inicio</p>
+                </button>
+              </div>
+              <div class="buttons__x3 mx-1">
+                <a href="../index.html#nosotros ">
+                  <button  type="button" class="buttons__x3--individual  text-white font-monospace">
+                    <img src="../assets/images/iconos/quienessomos.svg"alt="flecha"
+                    /><p>¿Quienes somos?</p>
+                  </button>
+                </a>
+              </div>
+              <div class="buttons__x3 mx-1">
+                <button onclick="location.href='#footer_contacto'" type="button" class="buttons__x3--individual  text-white font-monospace">
+                  <img
+                  src="../assets/images/iconos/contacto.svg"
+                  alt="flecha"
+                  /><p>Contacto</p>
+                </button>
+              </div>
+            </article>
 
-            <!-- Menu de queries --><!-- Menu de queries --><!-- Menu de queries -->
             <article class="menu font-monospace "style="width: 100%;">
               <li class="menu__d dropdown " style="width: 100%;">
                 <p
-                  class="menu-link dropdown-toggle text-white "
+                  class="menu__d--link dropdown-toggle text-white "
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Menu
-                </a>
+                  MENU
+                </p>
                 <ul class="dropdown-menu "style="width: 100%;">
                   <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
                   <li><a class="dropdown-item" href="#">Mi Carrito</a></li>
@@ -73,109 +97,76 @@
               </li>
             </article>
             <!-- final Menu de queries --><!-- final Menu de queries --><!-- final Menu de queries -->
-            
-            <!-- cajon de botones --><!-- cajon de botones --><!-- cajon de botones -->
-            <article class="buttons d-flex">
-              <!-- boton de ayuda --><!-- boton de ayuda -->
-              <div class="buttons__x3 mx-1 ">
-                <button type="button" class="buttons__x3--individual  text-white font-monospace">
-                  <img
-                  src="../assets/images/iconos/ayuda.svg"
-                  alt="flecha"
-                  /><p class="">Ayuda</p>
-                </button>
-              </div>
-              <!-- final boton de ayuda --><!-- final boton de ayuda -->
-              <!-- boton de usuario --><!-- boton de usuario -->
-              <div class="buttons__x3 mx-1">
-                <button type="button" class="buttons__x3--individual  text-white font-monospace">
-                  <img src="../assets/images/iconos/usuario.svg"alt="flecha"
-                  /><p>Mi cuenta</p>
-                </button>
-              </div>
-              <!-- final boton de usuario --><!-- final boton de usuario -->
-              <!-- boton de mi carrito --><!-- boton de mi carrito -->
-              <div class="buttons__x3 mx-1">
-                <button type="button" class="buttons__x3--individual  text-white font-monospace">
-                  <img
-                  src="../assets/images/iconos/carrito.svg"
-                  alt="flecha"
-                  /><p>Mi carrito</p>
-                </button>
-              </div>
-              <!-- final boton de mi carrito --><!-- final boton de mi carrito -->
-            </article>
-            <!-- final cajon de botones --><!-- final cajon de botones --><!-- final cajon de botones -->
+            <!-- modelos de queries  --><!-- modelos de queries  --><!-- modelos de queries  -->
+          <article class="modelos ">
+            <ul class="nav justify-content-center p-0 mb-0 font-monospace " style="width: 100%;">
+              <li class="nav-item dropdown "style="width: 100%;">
+                <a
+                  class="nav-link  dropdown-toggle text-white "
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                MODELOS
+                </a>
+                <ul class="dropdown-menu "style="width: 100%;">
+                  <li><a class="dropdown-item " href="Potes.html">Potes</a></li>
+                  <li><a class="dropdown-item" href="Botellas.html">Botellas</a></li>
+                  <li><a class="dropdown-item" href="Goteros.html">Goteros</a></li>
+                  <li><a class="dropdown-item" href="Vainilleros.html">Vainilleros</a></li>
+                  <li><a class="dropdown-item" href="Bidones.html">Bidones</a></li>
+                  <li><a class="dropdown-item" href="Tapers.html">Tapers</a></li>
+                </ul>
+              </li>
+            </ul>
+          </article>
           </nav>
           <!-- segunda fila de header --><!-- segunda fila de header --><!-- segunda fila de header -->
+          
+      <!-- final modelos de queries  --><!-- final modelos de queries  --><!-- final modelos de queries  -->
       </section>
       <!-- final contenedor de filas de header --><!-- final contenedor de filas de header --><!-- final contenedor de filas de header -->
       
       <!-- linea divisora oscura --><!-- linea divisora oscura --><!-- linea divisora oscura -->
-      <div class="divisor"></div>
+      <div class="encabezado__central"></div>
       <!-- final linea divisora oscura --><!-- final linea divisora oscura --><!-- final linea divisora oscura -->
 
-      <!-- modelos de queries  --><!-- modelos de queries  --><!-- modelos de queries  -->
-      <article class="modelos">
-        <div class="modelos__ul">
-          <ul class="nav justify-content-center p-0 mb-0 font-monospace " style="width: 100%;">
-            <li class="nav-item dropdown "style="width: 100%;">
-              <a
-                class="nav-link dropdown-toggle text-white "
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                MODELOS
-              </a>
-              <ul class="dropdown-menu "style="width: 100%;">
-                <li><a class="dropdown-item " href="../Pages/Potes.html">Potes</a></li>
-                <li><a class="dropdown-item" href="../Pages/Botellas.html">Botellas</a></li>
-                <li><a class="dropdown-item" href="../Pages/Goteros.html">Goteros</a></li>
-                <li><a class="dropdown-item" href="../Pages/Vainilleros.html">Vainilleros</a></li>
-                <li><a class="dropdown-item" href="../Pages/Bidones.html">Bidones</a></li>
-                <li><a class="dropdown-item" href="../Pages/Tapers.html">Tapers</a></li>
-              </ul>
-            </li>
-        </div>
-      </article>
-      <!-- final modelos de queries  --><!-- final modelos de queries  --><!-- final modelos de queries  -->
-      <!-- modelos desplegables --><!-- modelos desplegables --><!-- modelos desplegables -->
-      <section class="header-middle__bottom ">
+
+      <section class="encabezado__inferior ">
         <ul class="nav justify-content-center p-0 mb-0 font-monospace">
 
           <!-- boton de Potes --><!-- boton de Potes -->
-          <li class="nav-item"><a href="../Pages/Potes.html">
+          <li class="nav-item"><a href="Potes.html ">
             <button class="btn btn-primary">Potes</button></a>
           </li>
           <!-- final boton de Potes --><!-- final boton de Potes -->
 
           <!-- boton de Botellas --><!-- boton de Botellas -->
-          <li class="nav-item"><a href="../Pages/Botellas.html">
+          <li class="nav-item"><a href="Botellas.html">
             <button class="btn btn-primary">Botellas</button></a>
           </li>
           <!-- final boton de Botellas --><!-- final boton de Botellas -->
 
           <!-- boton de Goteros --><!-- boton de Goteros -->
-          <li class="nav-item"><a href="../Pages/Goteros.html">
+          <li class="nav-item"><a href="Goteros.html">
             <button class="btn btn-primary">Goteros</button></a>
           </li>
           <!-- final boton de Goteros --><!-- final boton de Goteros -->
 
           <!-- boton de Vainilleros --><!-- boton de Vainilleros -->
-          <li class="nav-item"><a href="../Pages/Vainilleros.html">
+          <li class="nav-item"><a href="Vainilleros.html">
             <button class="btn btn-primary">Vainilleros</button></a>
           </li>
           <!-- finalboton de Vainilleros --> <!-- finalboton de Vainilleros -->
 
           <!-- boton de Bidones--><!-- boton de Bidones-->
-          <li class="nav-item"><a href="../Pages/Bidones.html">
+          <li class="nav-item"><a href="Bidones.html">
             <button class="btn btn-primary">Bidones</button></a>
           </li>
           <!-- final boton de Bidones--><!-- final boton de Bidones-->
           <!-- boton de Tapers--><!-- boton de Tapers-->
-          <li class="nav-item"><a href="../Pages/Tapers.html">
+          <li class="nav-item"><a href="Tapers.html">
             <button class="btn btn-primary">Tapers</button></a>
           </li>
           <!-- final boton de Tapers--><!-- final boton de Tapers-->
@@ -183,28 +174,38 @@
         
       </section>
       <!-- final modelos desplegables --><!-- final modelos desplegables --><!-- final modelos desplegables -->
-    </header>
+      </header>
+
     <!-- final header final header final header final header final header final header final header final header final header final header final header final -->
     <main>
-
-      <section class="foto d-flex justify-content-center" >
-              <a>
-                <img
-                  src="../assets/images/vainilleros.webp"
-                  alt="Imagen"
-                  class="foto__edit"
-                />
-              </a>
-      </section>
+      <div class="caja-del-slider">
+        <div class="caja-del-slider__slider">
+          <img src="../assets/images/slider/vainilleros/100 tapa.webp" alt="Foto 1" class="caja-del-slider__slider--slide-img ">
+          <img src="../assets/images/slider/vainilleros/100 sin.webp" alt="Foto 2" class="caja-del-slider__slider--slide-img">
+          <img src="../assets/images/slider/vainilleros/30 tapa.webp" alt="Foto 3" class="caja-del-slider__slider--slide-img">
+          <img src="../assets/images/slider/vainilleros/30 sin.webp" alt="Foto 4" class="caja-del-slider__slider--slide-img">
+          <img src="../assets/images/slider/vainilleros/100 tapa.webp" alt="Foto 1" class="caja-del-slider__slider--slide-img ">
+          <img src="../assets/images/slider/vainilleros/100 sin.webp" alt="Foto 2" class="caja-del-slider__slider--slide-img">
+        </div>
+        <!-- Duplicado para el loop -->
+        <div class="caja-del-slider__slider">
+          <img src="../assets/images/slider/vainilleros/30 tapa.webp" alt="Foto 3" class="caja-del-slider__slider--slide-img">
+          <img src="../assets/images/slider/vainilleros/30 sin.webp" alt="Foto 4" class="caja-del-slider__slider--slide-img">
+          <img src="../assets/images/slider/vainilleros/100 tapa.webp" alt="Foto 1" class="caja-del-slider__slider--slide-img ">
+          <img src="../assets/images/slider/vainilleros/100 sin.webp" alt="Foto 2" class="caja-del-slider__slider--slide-img">
+          <img src="../assets/images/slider/vainilleros/30 tapa.webp" alt="Foto 3" class="caja-del-slider__slider--slide-img">
+          <img src="../assets/images/slider/vainilleros/30 sin.webp" alt="Foto 4" class="caja-del-slider__slider--slide-img">
+        </div>
+      </div>
 
     </main>
     <!-- final carrousel de fotos --><!-- final carrousel de fotos --><!-- final carrousel de fotos -->
     <!-- newsletter footer --><!-- newsletter footer --><!-- newsletter footer -->
-    <footer class="footer">
+    <footer id="footer_contacto" class="footer">
       <section class="footer__section font-monospace">
         <h1 class="footer__section--h1 " >NEWSLETTER</h1>
-        <h2 class="footer__section--h2 ">Recibí todas las ofertas</h2>
-        <p class="footer__section--p ">¿Quieres recibir nuestras ofertas? ¡Regístrate ya mismo y comienza a disfrutarlas!
+        <h2 class="footer__section--h2 ">¿Queres realizar una compra?</h2>
+        <p class="footer__section--p ">¿Quieres recibir nuestras ofertas? ¡Mandanos un email y te vamos a estar contactando!
         </p>
         <input class="footer__section--browser font-monospace" type="email" placeholder="Email... ">
         <button class="footer__section--button">
