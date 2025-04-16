@@ -1,8 +1,18 @@
-.container-fluid {
-    &__top{
-        font-size: 12px;
-        height: 20px;
-        word-spacing: 10px;
+
+.info-encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    padding: 1px;
+    &__int{
+            p{
+                font-size: small;
+                margin: 0;
+                color: #fff;
+                font-family: monospace;
+            }
     }
 }
 .navbar{
@@ -54,12 +64,7 @@
     }
 }
 @media (max-width: 575.98px){
-    .container-fluid {
-        &__top{
-            font-size: 8px;
-            height: 11px;
-        }
-    }
+
     .navbar{
         display: flex;
         flex-direction: column;
@@ -99,12 +104,7 @@
     }
 }
 @media (min-width: 575.99px) and (max-width: 766px){
-    .container-fluid{
-        &__top {
-        font-size: 10px;
-        height: 15px;
-        }
-    }
+
     .navbar{
         display: flex;
         flex-direction: column;

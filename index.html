@@ -11,45 +11,17 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <style>
-      #activar-giro {
-        display: none;
-      }
-    
-      .zona-libre {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    
-      .btn-giratorio {
-        display: inline-block;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-    
-      #activar-giro:checked + .zona-libre .btn-giratorio {
-        animation: girar 1s linear infinite;
-      }
-    
-      @keyframes girar {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-    </style>
     
   </head>
   <body class="todo_el_codigo">
     <header class="encabezado">
       <section class="encabezado__superior">
 
-        <section class="container-fluid bg-black d-flex justify-content-center ">
-          <article class="container-fluid__top d-flex">
-            <p class="font-monospace text-light ">
+        <section class="info-encabezado">
+          <article class="info-encabezado__int">
+            <p class="font-monospace text-light  m-0">
               ¡Envíos a todo el país! // Precios SIN IVA incluido // Somos
-              fabricantes
+              fabricantes!
             </p>
           </article>
         </section>
@@ -372,7 +344,7 @@
               </div>
         </article>
       </section>
-      <section id="nosotros"  class="container my-5 text-center">
+      <section id="nosotros"  class="nosotros my-5 text-center">
         <h2 class="mb-4 text-success">¿Quiénes Somos?</h2>
       
         <p class="text-muted small">

@@ -1,32 +1,44 @@
 
-    .caja-del-slider {
-        width: 100%;
-        height: 500px;
-        overflow: hidden;
-        background: white;
-        margin: 15px;
+.carrusel{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    &__int{
         display: flex;
-        align-items: center;
-        display: flex;
-        animation: scroll 60s linear infinite;
-        width: max-content;
+        animation: scroll 15s linear infinite;
+        width: fit-content;
+        &--int{
+            flex: 0 0 25%;
+            padding: 5px;
+            img{
+                height: 500px;
+                width: 100%;
+                object-fit: cover;
+                display: block;      
+            }
+            
+        }
     }
-    .caja-del-slider__slider {
-    display: flex;
-    img {
-        width: 500px;
-        height: auto;
-        object-fit: cover;
-        flex-shrink: 0;
-        margin: 20px;
-
-        view-timeline-name: --reveal;
-
-        animation-name: show;
-        animation-fill-mode: both;
-
-        animation-timeline: --reveal;
-        animation-range: entry 25% cover 50%;
-
+}
+@media (max-width: 575.98px){
+    .carrusel{
+        &__int{
+            &--int{
+                flex: 0 0 100%;
+            }
+        }
     }
+
+    
+
+}
+@media (min-width: 575.99px) and (max-width: 766px){
+    .carrusel{
+        &__int{
+            &--int{
+                flex: 0 0 50%;
+            }
+        }
     }
+
+}

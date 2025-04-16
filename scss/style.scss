@@ -1,12 +1,11 @@
 @import "encabezadosuperior"; //listo y queries
 @import "encabezadoinferior"; // LISTO y queries
-@import "encabezadocentral"; // LISTO y queries
 @import "grids"; // LISTO y queries
 @import "footer"; // LISTO y queries
 @import "animaciones"; // listo y queries
 @import "menu-y-modelos-desplegables"; // listo y queries
 @import "modelos-individuales"; // listo y queries
-
+@import"nosotros"; // listo y queries
 .todo_el_codigo{
     font-family: "Nunito", sans-serif;
     display: flex;
@@ -26,7 +25,12 @@
             flex-direction: column;
             height: auto;
         }   
-        
+        &__central{
+            width: 100%;
+            height: 1px;
+            background-color: #92ffed;
+            filter: brightness(80%);
+        }
         &__inferior{
             display: flex;
             flex-direction: column;

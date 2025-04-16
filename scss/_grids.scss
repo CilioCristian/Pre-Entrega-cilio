@@ -11,6 +11,10 @@
             .grid-images {
                 margin-bottom: 50px;
                 padding: 10px;
+                img:hover {
+                    filter: grayscale(100%);
+                    transition: filter 0.3s ease;
+                  }
             }
         }
     }       
