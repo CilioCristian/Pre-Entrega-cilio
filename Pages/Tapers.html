@@ -12,13 +12,9 @@
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
-  <!--  body  --><!--  body  --><!--  body  -->
   <body class="todo_el_codigo">
-    <!-- header --><!-- header --><!-- header -->
     <header class="encabezado">
-      <!-- contenedor de filas de header --><!-- contenedor de filas de header --><!-- contenedor de filas de header -->
       <section class="encabezado__superior">
-        <!-- primera fila de header --><!-- primera fila de header --><!-- primera fila de header -->
         <section class="info-encabezado">
           <article class="info-encabezado__int">
             <p class="font-monospace text-light  m-0">
@@ -27,15 +23,12 @@
             </p>
           </article>
         </section>
-          <!-- segunda fila de header --><!-- segunda fila de header --><!-- segunda fila de header -->
           <nav class="navbar navbar-expand-lg bg-body-tertiarys d-flex justify-content-between align-items-center ">
-            <!-- logo onlyplast --><!-- logo onlyplast --><!-- logo onlyplast -->            <article class="navbar__logo">
+            <article class="navbar__logo">
               <a href="../index.html">
                 <img src="../assets/images/only.webp" alt="Logo"class="navbar__logo--only img-fluid">
                 </a>
             </article>
-            <!-- final logo onlyplast --><!-- final logo onlyplast --><!-- final logo onlyplast -->
-            <!-- buscador --><!-- buscador --><!-- buscador -->
             <article class="browser font-monospace flex-grow-1 mx-3 ">
               <div class="browser__search " role="search">
                 <input
@@ -46,36 +39,56 @@
                 />
               </div>
             </article>
-            <!-- final buscador --><!-- final buscador --><!-- final buscador -->
-            <!-- cajon de botones --><!-- cajon de botones --><!-- cajon de botones -->
             <article class="buttons d-flex">
               <div class="buttons__x3 mx-1 ">
-                <button onclick="location.href='#encabezado_superior_inicio'" type="button" class="buttons__x3--individual  text-white font-monospace">
+                <button onclick="location.href='#envios'" type="button" class="buttons__x3--individual  text-white font-monospace">
                   <img
-                  src="../assets/images/iconos/inicio.svg"
-                  alt="flecha"
-                  /><p>Inicio</p>
+                    src="../assets/images/iconos/envios.svg"
+                    alt="flecha"
+                  /><p>Envios</p>
                 </button>
               </div>
               <div class="buttons__x3 mx-1">
-                <a href="../index.html#nosotros ">
-                  <button  type="button" class="buttons__x3--individual  text-white font-monospace">
-                    <img src="../assets/images/iconos/quienessomos.svg"alt="flecha"
-                    /><p>¿Quienes somos?</p>
-                  </button>
-                </a>
+                <button onclick="location.href='#nosotros'" type="button" class="buttons__x3--individual  text-white font-monospace">
+                  <img src="../assets/images/iconos/quienessomos.svg"alt="flecha"
+                  /><p>¿Quienes somos?</p>
+                </button>
               </div>
               <div class="buttons__x3 mx-1">
                 <button onclick="location.href='#footer_contacto'" type="button" class="buttons__x3--individual  text-white font-monospace">
                   <img
-                  src="../assets/images/iconos/contacto.svg"
-                  alt="flecha"
+                    src="../assets/images/iconos/contacto.svg"
+                    alt="flecha"
                   /><p>Contacto</p>
                 </button>
               </div>
             </article>
-            <article class="menu font-monospace "style="width: 100%;">
-              <li class="menu__d dropdown " style="width: 100%;">
+          </nav>
+      </section>
+      <section class="encabezado__central">
+        <article class="encabezado__central--divisor"></article> 
+        <article class="encabezado__central--desplegables">
+          <div class="menu font-monospace "style="width: 100%;">
+            <li class="menu__d dropdown " style="width: 100%;">
+              <p
+                class="menu__d--link dropdown-toggle text-white "
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                AYUDA
+              </p>
+              <ul class="dropdown-menu "style="width: 100%;">
+                <li><a class="dropdown-item" href="#envios">¿Hacen envios?</a></li>
+                <li><a class="dropdown-item" href="#nosotros">¿Quienes somos?</a></li>
+                <li><a class="dropdown-divider"></a></li>
+                <li><a class="dropdown-item" href="#footer_contacto">Contacto</a></li>
+              </ul>
+            </li>
+          </div>
+          <div class="menu font-monospace " style="width: 100%;">
+              <li class="menu__d dropdown "style="width: 100%;">
                 <p
                   class="menu__d--link dropdown-toggle text-white "
                   href="#"
@@ -83,53 +96,20 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  MENU
-                </p>
-                <ul class="dropdown-menu "style="width: 100%;">
-                  <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
-                  <li><a class="dropdown-item" href="#">Mi Carrito</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Ayuda</a></li>
-                </ul>
-              </li>
-            </article>
-            <!-- final Menu de queries --><!-- final Menu de queries --><!-- final Menu de queries -->
-            <!-- modelos de queries  --><!-- modelos de queries  --><!-- modelos de queries  -->
-          <article class="modelos ">
-            <ul class="nav justify-content-center p-0 mb-0 font-monospace " style="width: 100%;">
-              <li class="nav-item dropdown "style="width: 100%;">
-                <a
-                  class="nav-link  dropdown-toggle text-white "
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
                 MODELOS
-                </a>
+              </p>
                 <ul class="dropdown-menu "style="width: 100%;">
                   <li><a class="dropdown-item " href="Potes.html">Potes</a></li>
                   <li><a class="dropdown-item" href="Botellas.html">Botellas</a></li>
                   <li><a class="dropdown-item" href="Goteros.html">Goteros</a></li>
                   <li><a class="dropdown-item" href="Vainilleros.html">Vainilleros</a></li>
                   <li><a class="dropdown-item" href="Bidones.html">Bidones</a></li>
-                  <li><a class="dropdown-item" href="Tapers.html">Tapers</a></li>
                 </ul>
               </li>
-            </ul>
-          </article>
-          </nav>
-          <!-- segunda fila de header --><!-- segunda fila de header --><!-- segunda fila de header -->
-          
-      <!-- final modelos de queries  --><!-- final modelos de queries  --><!-- final modelos de queries  -->
+          </div>
+        </article>
       </section>
-      <!-- final contenedor de filas de header --><!-- final contenedor de filas de header --><!-- final contenedor de filas de header -->
-      
-      <!-- linea divisora oscura --><!-- linea divisora oscura --><!-- linea divisora oscura -->
-      <div class="encabezado__central"></div>
-      <!-- final linea divisora oscura --><!-- final linea divisora oscura --><!-- final linea divisora oscura -->
-
-
+ 
       <section class="encabezado__inferior ">
         <ul class="nav justify-content-center p-0 mb-0 font-monospace">
 
@@ -174,7 +154,7 @@
       </header>
 
     <!-- final header final header final header final header final header final header final header final header final header final header final header final -->
-    <main>
+    <main class="contenido">
       <main>
         <div class="carrusel">
           <div class="carrusel__int" id="carrusel__int">
@@ -192,6 +172,73 @@
             <div class="carrusel__int--int"><img src="../assets/images/slider/tapers/taper chico violeta.webp" alt="Foto 3"></div>
           </div>
         </div>
+        <section id="nosotros"  class="nosotros my-5 text-center">
+          <h2 class="mb-4 text-success">¿Quiénes Somos?</h2>
+        
+          <p class="text-muted small">
+            <strong>¡Hola!</strong> Somos <span class="fw-bold text-success">ONLYPLAST</span>, una empresa dedicada a ofrecer soluciones con envases innovadores y de alta calidad para tus productos. Con un enfoque creativo y práctico, trabajamos para transformar la forma en que las personas y las empresas, almacenan y presentan sus productos.
+          </p>
+        
+          <p class="text-muted small">
+            <strong class="text-success">Nuestra Misión:</strong> Proporcionar envases funcionales, elegantes y duraderos que protejan eficazmente lo que importa. Nos comprometemos a ofrecer productos de la más alta calidad que faciliten la vida de nuestros clientes y mejoren su experiencia al momento de almacenar y presentar sus productos.
+          </p>
+        
+          <p class="text-muted small">
+            <strong class="text-success">Nuestra Visión:</strong> Convertirnos en una referencia en la industria de los envases, destacándonos por ofrecer soluciones innovadoras que se adapten a las necesidades de cada cliente. Queremos ser el socio ideal para empresas que buscan envases prácticos, funcionales y con un diseño atractivo, sin comprometer la calidad ni la experiencia del usuario.
+          </p>
+        
+          <h5 class="text-success mt-5">Nuestros Valores:</h5>
+          <ul class="list-unstyled small text-muted">
+            <li><strong>Innovación:</strong> Buscamos nuevas ideas y soluciones creativas que mejoren la funcionalidad y el diseño de nuestros envases.</li>
+            <li><strong>Calidad:</strong> Priorizamos la excelencia en nuestros productos, asegurando que cada uno cumpla los más altos estándares.</li>
+            <li><strong>Compromiso con el cliente:</strong> Entendemos sus necesidades y trabajamos para ofrecer un servicio personalizado y excepcional.</li>
+            <li><strong>Diseño:</strong> Creemos que el diseño es clave en la experiencia del producto. Nuestros envases son prácticos y atractivos.</li>
+          </ul>
+        
+          <p class="text-muted small">
+            <strong class="text-success">Nuestro Equipo:</strong> Cada miembro aporta creatividad y experiencia para desarrollar productos que realmente marcan la diferencia. Creemos en el poder de las ideas para transformar la forma en que las personas se relacionan con los productos.
+          </p>
+        
+          <h5 class="text-success mt-5">¿Por qué elegirnos?</h5>
+          <ul class="list-unstyled small text-muted">
+            <li><strong>Variedad de productos:</strong> Amplia gama de envases adaptados a distintas necesidades y sectores.</li>
+            <li><strong>Diseño atractivo:</strong> Funcionales y estéticamente agradables, ideales para destacar.</li>
+            <li><strong>Servicio personalizado:</strong> Soluciones que se ajustan a las necesidades específicas de cada cliente.</li>
+            <li><strong>Calidad garantizada:</strong> Envases duraderos y funcionales, fabricados con materiales de alta calidad.</li>
+          </ul>
+        </section>
+        <section id="envios" class="envios my-5 text-center">
+          <h2 class="mb-4 text-success">¿Cómo son los envíos?</h2>
+        
+          <p class="text-muted small">
+            El tiempo que tarda tu compra desde que se acredita el pago hasta que llega a la dirección que indicaste dependerá del lugar donde te encuentres y de si el producto se encuentra en stock. Del mismo modo, las tarifas son variables.
+          </p>
+        
+          <p class="text-muted small">
+            Para tu mayor comodidad, podés elegir entre <strong class="text-success">2 alternativas de envío</strong>. A continuación te detallamos cada una para que puedas elegir la que más te convenga:
+          </p>
+        
+          <h5 class="text-success mt-5">Envío a domicilio:</h5>
+        
+          <ul class="list-unstyled small text-muted">
+            <li><strong>CABA/GBA:</strong> Tu compra será enviada por Correo Argentino o Andreani. Se realizará una sola visita a domicilio entre las 9 y las 19 hs. Puede recibir cualquier persona. En caso de que no haya nadie, el paquete será derivado a la sucursal del Correo más cercana. Podrás saber cuál es con el código de seguimiento que te enviaremos por mail. El paquete permanecerá en la sucursal durante 5 días para que lo retires. Pasado ese plazo, será devuelto a la oficina. Te rogamos que estés atent@ para evitar esto.</li>
+            <li><strong>Interior:</strong> Las condiciones son las mismas: envío con Correo Argentino o Andreani, una visita entre las 9 y las 19 hs, posibilidad de que reciba cualquier persona, y retiro en sucursal en caso de ausencia, con un plazo de 5 días para retirar el paquete.</li>
+          </ul>
+        
+          <p class="text-muted small">
+            En ambos casos, <strong>el despacho del pedido será entre 1 a 3 días hábiles</strong>. Luego, el tiempo de entrega puede ser de <strong>1 a 5 días hábiles</strong>, dependiendo del destino. Te enviaremos un mail con el número de seguimiento (no olvides revisar la carpeta de spam). Es tu responsabilidad realizar el seguimiento del envío.
+          </p>
+        
+          <h5 class="text-success mt-5">Envío a sucursal:</h5>
+        
+          <p class="text-muted small">
+            En este caso también, tu pedido se despachará entre 1 a 3 días hábiles. Luego será entregado por Correo Argentino o Andreani a la sucursal que corresponda, en un plazo de entre 1 a 5 días hábiles.
+          </p>
+        
+          <p class="text-muted small">
+            Te llegará un mail con el número de seguimiento o guía de tu compra (verificá el correo no deseado). Tendrás <strong>5 días hábiles para retirarlo</strong>. Si no lo hacés dentro de ese plazo, el paquete será devuelto a nuestra oficina. Te pedimos que estés atent@ para evitar esto.
+          </p>
+        </section>
         
     </main>
     <!-- final carrousel de fotos --><!-- final carrousel de fotos --><!-- final carrousel de fotos -->
