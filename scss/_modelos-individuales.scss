@@ -8,7 +8,7 @@
         animation: scroll 15s linear infinite;
         width: fit-content;
         &--int{
-            flex: 0 0 25%;
+            flex: 0 0 30%;
             padding: 5px;
             img{
                 height: 500px;
@@ -24,7 +24,7 @@
     .carrusel{
         &__int{
             &--int{
-                flex: 0 0 100%;
+                flex: 0 0 110%;
             }
         }
     }
@@ -36,7 +36,7 @@
     .carrusel{
         &__int{
             &--int{
-                flex: 0 0 50%;
+                flex: 0 0 70%;
             }
         }
     }

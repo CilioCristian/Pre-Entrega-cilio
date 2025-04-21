@@ -157,8 +157,14 @@
   height: 45px;
   cursor: pointer;
 }
+.encabezado__central--desplegables .menu:hover .menu__d--link {
+  animation: rotate-center 0.4s;
+}
 .encabezado__central--desplegables .menu__d .dropdown-menu {
   text-align: center;
+}
+.encabezado__central--desplegables .menu__d .dropdown-menu .dropdown-item:hover {
+  animation: shadow-drop-bottom-right 0.4s linear both;
 }
 
 @media (min-width: 575.99px) and (max-width: 766px) {
@@ -182,7 +188,6 @@
 /* modelos desplegables */
 .nav {
   /* items desplegables */
-  /* items desplegables */
 }
 .nav-item {
   height: auto;
@@ -201,6 +206,7 @@
   height: auto;
 }
 
+/* items desplegables */
 @media (max-width: 575.98px) {
   .btn {
     display: none;
@@ -307,6 +313,32 @@
 }
 
 /* newsletter footer */
+@keyframes shadow-drop-bottom-right {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    box-shadow: 12px 12px 20px -12px rgba(255, 255, 255, 0.55);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scale-up-vertical-top {
+  0% {
+    transform: scaleY(0.4);
+    transform-origin: center top;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: center top;
+  }
+}
 @keyframes shake-left-right {
   0%, 100% {
     transform: rotate(0deg);
@@ -366,7 +398,7 @@
   width: fit-content;
 }
 .carrusel__int--int {
-  flex: 0 0 25%;
+  flex: 0 0 30%;
   padding: 5px;
 }
 .carrusel__int--int img {
@@ -378,12 +410,12 @@
 
 @media (max-width: 575.98px) {
   .carrusel__int--int {
-    flex: 0 0 100%;
+    flex: 0 0 110%;
   }
 }
 @media (min-width: 575.99px) and (max-width: 766px) {
   .carrusel__int--int {
-    flex: 0 0 50%;
+    flex: 0 0 70%;
   }
 }
 .contenido .nosotros {
