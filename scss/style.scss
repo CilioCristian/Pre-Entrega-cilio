@@ -1,11 +1,11 @@
-@import "encabezadosuperior"; //listo y queries
-@import "encabezadocentral"; // LISTO y queries
-@import "encabezadoinferior"; // LISTO y queries
-@import "grids"; // LISTO y queries
-@import "footer"; // LISTO y queries
-@import "animaciones"; // listo y queries
-@import "slider"; // listo y queries
-@import"nosotrosyenvios"; // listo y queries
+@import "body/Header/encabezadosuperior"; //listo y queries
+@import "body/Header/encabezadocentral"; // LISTO y queries
+@import "body/Header/encabezadoinferior"; // LISTO y queries
+@import "body/Main/grids"; // LISTO y queries
+@import "body/Main/slider"; // LISTO y queries
+@import "body/Main/nosotrosyenvios"; // listo y queries
+@import "body/Footer/footer"; // listo y queries
+@import"body/Animaciones/animaciones"; // listo y queries
 .todo_el_codigo{
     font-family: "Nunito", sans-serif;
     display: flex;

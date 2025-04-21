@@ -266,6 +266,54 @@
     display: block;
   }
 }
+.carrusel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.carrusel__int {
+  display: flex;
+  animation: scroll 15s linear infinite;
+  width: fit-content;
+}
+.carrusel__int--int {
+  flex: 0 0 30%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+}
+.carrusel__int--int img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 575.98px) {
+  .carrusel__int--int {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    flex: 0 0 110%;
+  }
+}
+@media (min-width: 575.99px) and (max-width: 790px) {
+  .carrusel__int--int {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    flex: 0 0 70%;
+  }
+}
+.contenido .nosotros {
+  background: linear-gradient(90deg, rgb(240, 255, 255) 0%, rgb(225, 250, 250) 50%, rgb(240, 255, 255) 100%);
+  padding: 20px;
+}
+.contenido .envios {
+  background: linear-gradient(90deg, rgb(240, 255, 255) 0%, rgb(225, 250, 250) 50%, rgb(240, 255, 255) 100%);
+  padding: 20px;
+}
+
 /* newsletter footer */
 .footer {
   background: #4FA2A5;
@@ -387,54 +435,6 @@
     transform: scale(1) rotateY(360deg);
   }
 }
-.carrusel {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-.carrusel__int {
-  display: flex;
-  animation: scroll 15s linear infinite;
-  width: fit-content;
-}
-.carrusel__int--int {
-  flex: 0 0 30%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 15px;
-}
-.carrusel__int--int img {
-  height: 500px;
-  width: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-@media (max-width: 575.98px) {
-  .carrusel__int--int {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    flex: 0 0 110%;
-  }
-}
-@media (min-width: 575.99px) and (max-width: 790px) {
-  .carrusel__int--int {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    flex: 0 0 70%;
-  }
-}
-.contenido .nosotros {
-  background: linear-gradient(90deg, rgb(240, 255, 255) 0%, rgb(225, 250, 250) 50%, rgb(240, 255, 255) 100%);
-  padding: 20px;
-}
-.contenido .envios {
-  background: linear-gradient(90deg, rgb(240, 255, 255) 0%, rgb(225, 250, 250) 50%, rgb(240, 255, 255) 100%);
-  padding: 20px;
-}
-
 .todo_el_codigo {
   font-family: "Nunito", sans-serif;
   display: flex;
