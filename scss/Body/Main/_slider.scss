@@ -1,31 +1,29 @@
-
-.carrusel{
+.carrusel {
     overflow: hidden;
     width: 100%;
     position: relative;
-    &__int{
+    &__int {
         display: flex;
         animation: scroll 15s linear infinite;
         width: fit-content;
-        &--int{
+        &--int {
             flex: 0 0 30%;
             padding-top: 30px;
             padding-bottom: 30px;
             padding-left: 15px;
-            img{
+            img {
                 height: 500px;
                 width: 100%;
                 object-fit: cover;
-                display: block;      
+                display: block;
             }
-            
         }
     }
 }
-@media (max-width: 575.98px){
-    .carrusel{
-        &__int{
-            &--int{
+@media (max-width: 575.98px) {
+    .carrusel {
+        &__int {
+            &--int {
                 padding-top: 10px;
                 padding-bottom: 10px;
                 padding-left: 10px;
@@ -33,14 +31,11 @@
             }
         }
     }
-
-    
-
 }
-@media (min-width: 575.99px) and (max-width: 790px){
-    .carrusel{
-        &__int{
-            &--int{
+@media (min-width: 575.99px) and (max-width: 790px) {
+    .carrusel {
+        &__int {
+            &--int {
                 padding-top: 20px;
                 padding-bottom: 20px;
                 padding-left: 10px;
@@ -48,5 +43,4 @@
             }
         }
     }
-
 }

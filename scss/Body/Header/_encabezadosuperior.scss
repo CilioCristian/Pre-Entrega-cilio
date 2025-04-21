@@ -1,148 +1,141 @@
-
-.info-encabezado{
+.info-encabezado {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: black;
     padding: 1px;
-    &__int{
-            p{
-                font-size: small;
-                margin: 0;
-                color: #fff;
-                font-family: monospace;
-            }
+    &__int {
+        p {
+            font-size: small;
+            margin: 0;
+            color: #fff;
+            font-family: monospace;
+        }
     }
 }
-.navbar{
+.navbar {
     display: flex;
-    &__logo{
+    &__logo {
         height: auto;
         padding: 10px;
-        &--only{
+        &--only {
             height: 60px;
             width: auto;
-            &:hover{
+            &:hover {
                 animation: shake-left-right 0.8s linear both;
             }
         }
     }
-    .browser{
+    .browser {
         overflow: visible;
-        &__search{
-            .form-control{
+        &__search {
+            .form-control {
                 font-size: small;
                 height: 30px;
             }
         }
     }
-    .buttons{
+    .buttons {
         display: flex;
         gap: 5px;
-        &__x3{
+        &__x3 {
             display: flex;
             font-size: x-small;
             align-items: center;
             border: none;
             background-color: #62c3c7;
-            &--individual{  
+            &--individual {
                 font-size: 12px;
                 background-color: #62c3c7;
                 padding-top: 10px;
                 border: none;
                 width: 120px;
-                &:hover{
+                &:hover {
                     animation: scale-up-center 0.2s ease-out both;
                     border: none;
                     background-color: #4fa2a5;
                     border-radius: 30%;
                     height: 60px;
                 }
-
             }
         }
     }
 }
-@media (max-width: 575.98px){
-
-    .navbar{
+@media (max-width: 575.98px) {
+    .navbar {
         display: flex;
         flex-direction: column;
         align-content: center;
         height: auto;
         width: auto;
-        &__logo{
+        &__logo {
             height: auto;
-            &--only{
+            &--only {
                 width: 100%;
             }
         }
-        .browser{
+        .browser {
             display: flex;
             justify-content: center;
             height: auto;
             width: 100%;
-            &__search{
-                display: flex;
-            justify-content: center;
-            width: 100%;
-                .form-control{
-                    width: 80%;
-                    
-                }
-            }
-        }
-        .buttons{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            height: auto;
-            width: 100%;
-            &__x3{
-                display:none;
-                
-            }
-        }
-    }
-}
-@media (min-width: 575.99px) and (max-width: 790px){
-
-    .navbar{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        height: auto;
-        width: auto;
-        &__logo{
-            &--only{
-                width: 100%;
-            }
-        }
-        .browser{
-            display: flex;
-            justify-content: center;
-            height: auto;
-            width: 100%;
-            &__search{
+            &__search {
                 display: flex;
                 justify-content: center;
                 width: 100%;
-                .form-control{
+                .form-control {
                     width: 80%;
                 }
             }
         }
-        .buttons{
+        .buttons {
             display: flex;
             flex-direction: row;
             justify-content: center;
             height: auto;
             width: 100%;
-            &__x3{
-                display:none;
+            &__x3 {
+                display: none;
             }
         }
     }
-
+}
+@media (min-width: 575.99px) and (max-width: 790px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        height: auto;
+        width: auto;
+        &__logo {
+            &--only {
+                width: 100%;
+            }
+        }
+        .browser {
+            display: flex;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+            &__search {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                .form-control {
+                    width: 80%;
+                }
+            }
+        }
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+            &__x3 {
+                display: none;
+            }
+        }
+    }
 }

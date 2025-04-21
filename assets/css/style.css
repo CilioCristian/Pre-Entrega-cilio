@@ -161,6 +161,7 @@
   animation: rotate-center 0.4s;
 }
 .encabezado__central--desplegables .menu__d .dropdown-menu {
+  animation: scale-up-vertical-top 0.1s linear;
   text-align: center;
 }
 .encabezado__central--desplegables .menu__d .dropdown-menu .dropdown-item:hover {
@@ -316,7 +317,7 @@
 
 /* newsletter footer */
 .footer {
-  background: #4FA2A5;
+  background: #4fa2a5;
   background: linear-gradient(90deg, rgb(79, 162, 165) 0%, rgb(98, 195, 199) 30%, rgb(98, 195, 199) 70%, rgb(79, 162, 165) 100%);
   color: white;
   text-align: center;
@@ -424,17 +425,6 @@
     transform: translateX(-50%);
   }
 }
-@keyframes rotate-scale-down-vertical {
-  0% {
-    transform: scale(1) rotateY(0);
-  }
-  50% {
-    transform: scale(0.5) rotateY(180deg);
-  }
-  100% {
-    transform: scale(1) rotateY(360deg);
-  }
-}
 .todo_el_codigo {
   font-family: "Nunito", sans-serif;
   display: flex;
@@ -461,5 +451,7 @@
   flex-direction: column;
   height: auto;
 }
+
+/*  sass --watch scss/style.scss assets/css/style.css */
 
 /*# sourceMappingURL=style.css.map */

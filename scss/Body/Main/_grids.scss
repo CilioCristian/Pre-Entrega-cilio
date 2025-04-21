@@ -14,16 +14,16 @@
                 img:hover {
                     filter: grayscale(100%);
                     transition: filter 0.3s ease;
-                  }
+                }
             }
         }
-    }       
+    }
 }
 .segundo_grid,
 .tercer_grid {
     display: none;
 }
-@media (max-width: 575.98px){
+@media (max-width: 575.98px) {
     .primer_grid,
     .tercer_grid {
         display: none;
@@ -31,10 +31,9 @@
     .segundo_grid {
         display: block;
     }
-    
 }
 
-@media (min-width: 575.99px) and (max-width: 790px){
+@media (min-width: 575.99px) and (max-width: 790px) {
     .primer_grid,
     .segundo_grid {
         display: none;
@@ -42,6 +41,4 @@
     .tercer_grid {
         display: block;
     }
-
 }
-

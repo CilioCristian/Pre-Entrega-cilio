@@ -1,48 +1,53 @@
 /* newsletter footer */
 .footer {
-  background: #4FA2A5;
-  background: linear-gradient(90deg, rgba(79, 162, 165, 1) 0%, rgba(98, 195, 199, 1) 30%, rgba(98, 195, 199, 1) 70%, rgba(79, 162, 165, 1) 100%);
-  color: white;
-  text-align: center;
-  height: auto;
+    background: #4fa2a5;
+    background: linear-gradient(
+        90deg,
+        rgba(79, 162, 165, 1) 0%,
+        rgba(98, 195, 199, 1) 30%,
+        rgba(98, 195, 199, 1) 70%,
+        rgba(79, 162, 165, 1) 100%
+    );
+    color: white;
+    text-align: center;
+    height: auto;
     &__section {
-      padding: 70px 0 ;
-      &--h1 {
-        font-size: small;
-        margin-bottom: 20px;
-      }
-      &--h2 {
-        font-weight: bold;
-        font-size: 26px;
-        margin-bottom: 20px;
-      }
-      &--p {
-        font-size: 12px;
-        margin-bottom: 20px;
-      }
-      &--browser {
-        font-size: small;
-        width: 70%;
-        padding: 10px;
-        border: none;
-        border-radius: 10px; 
-        margin-bottom: 0px;    
-        cursor: pointer;
-      }
-      &--button{
-        padding: 5px;
-        background-color: white;
-        color: #62c3c7;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        &:focus{
-          animation: rotate-scale-down-vertical 0.4s linear both;
-          background-color: #4fa2a5;
-          
+        padding: 70px 0;
+        &--h1 {
+            font-size: small;
+            margin-bottom: 20px;
         }
-      }
+        &--h2 {
+            font-weight: bold;
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+        &--p {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        &--browser {
+            font-size: small;
+            width: 70%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 0px;
+            cursor: pointer;
+        }
+        &--button {
+            padding: 5px;
+            background-color: white;
+            color: #62c3c7;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            &:focus {
+                animation: rotate-scale-down-vertical 0.4s linear both;
+                background-color: #4fa2a5;
+            }
+        }
     }
-  }
-  
-  /* newsletter footer */
+}
+
+/* newsletter footer */

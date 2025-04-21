@@ -1,313 +1,615 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Onlyplast</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-  </head>
-  <body class="todo_el_codigo">
-    <header class="encabezado">
-      <section class="encabezado__superior">
-        <section class="info-encabezado">
-          <article class="info-encabezado__int">
-            <p class="font-monospace text-light  m-0">
-              ¡Envíos a todo el país! // Precios SIN IVA incluido // Somos
-              fabricantes!
-            </p>
-          </article>
-        </section>
-          <nav class="navbar navbar-expand-lg bg-body-tertiarys d-flex justify-content-between align-items-center ">
-            <article class="navbar__logo">
-              <a href="../index.html">
-                <img src="../assets/images/only.webp" alt="Logo"class="navbar__logo--only img-fluid">
-                </a>
-            </article>
-            <article class="browser font-monospace flex-grow-1 mx-3 ">
-              <div class="browser__search " role="search">
-                <input
-                  class="form-control "
-                  type="search"
-                  placeholder="¿Que estas buscando?..."
-                  aria-label="Search"
-                />
-              </div>
-            </article>
-            <article class="buttons d-flex">
-              <div class="buttons__x3 mx-1 ">
-                <button onclick="location.href='#envios'" type="button" class="buttons__x3--individual  text-white font-monospace">
-                  <img
-                    src="../assets/images/iconos/envios.svg"
-                    alt="flecha"
-                  /><p>Envios</p>
-                </button>
-              </div>
-              <div class="buttons__x3 mx-1">
-                <button onclick="location.href='#nosotros'" type="button" class="buttons__x3--individual  text-white font-monospace">
-                  <img src="../assets/images/iconos/quienessomos.svg"alt="flecha"
-                  /><p>¿Quienes somos?</p>
-                </button>
-              </div>
-              <div class="buttons__x3 mx-1">
-                <button onclick="location.href='#footer_contacto'" type="button" class="buttons__x3--individual  text-white font-monospace">
-                  <img
-                    src="../assets/images/iconos/contacto.svg"
-                    alt="flecha"
-                  /><p>Contacto</p>
-                </button>
-              </div>
-            </article>
-          </nav>
-      </section>
-      <section class="encabezado__central">
-        <article class="encabezado__central--divisor"></article> 
-        <article class="encabezado__central--desplegables">
-          <div class="menu font-monospace "style="width: 100%;">
-            <li class="menu__d dropdown " style="width: 100%;">
-              <p
-                class="menu__d--link dropdown-toggle text-white "
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                AYUDA
-              </p>
-              <ul class="dropdown-menu "style="width: 100%;">
-                <li><a class="dropdown-item" href="#envios">¿Hacen envios?</a></li>
-                <li><a class="dropdown-item" href="#nosotros">¿Quienes somos?</a></li>
-                <li><a class="dropdown-divider"></a></li>
-                <li><a class="dropdown-item" href="#footer_contacto">Contacto</a></li>
-              </ul>
-            </li>
-          </div>
-          <div class="menu font-monospace " style="width: 100%;">
-              <li class="menu__d dropdown "style="width: 100%;">
-                <p
-                  class="menu__d--link dropdown-toggle text-white "
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Onlyplast vende vainilleros plásticos de alta calidad, ideales para la industria de la gastronomía y la venta de vainilla. Realizamos envíos a todo el país."
+        />
+        <meta
+            name="keywords"
+            content="vainilleros plásticos, vainilleros para gastronomía, vainilleros de alta calidad, envíos a todo el país"
+        />
+        <meta name="author" content="Onlyplast" />
+
+        <title>
+            OnlyPlast | Venta de Vainilleros Plásticos para Gastronomía
+        </title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../assets/css/style.css" />
+    </head>
+    <body class="todo_el_codigo">
+        <header class="encabezado">
+            <section class="encabezado__superior" role="banner">
+                <!-- Información de la organización -->
+                <section
+                    class="info-encabezado"
+                    itemscope
+                    itemtype="https://schema.org/Organization"
                 >
-                MODELOS
-              </p>
-                <ul class="dropdown-menu "style="width: 100%;">
-                  <li><a class="dropdown-item " href="Potes.html">Potes</a></li>
-                  <li><a class="dropdown-item" href="Botellas.html">Botellas</a></li>
-                  <li><a class="dropdown-item" href="Goteros.html">Goteros</a></li>
-                  <li><a class="dropdown-item" href="Bidones.html">Bidones</a></li>
-                  <li><a class="dropdown-item" href="Tapers.html">Tapers</a></li>
+                    <meta itemprop="name" content="Onlyplast" />
+                    <article
+                        class="info-encabezado__int"
+                        itemprop="description"
+                    >
+                        <p class="font-monospace text-light m-0">
+                            ¡Envíos a todo el país! // Precios SIN IVA incluido
+                            // Somos fabricantes!
+                        </p>
+                    </article>
+                </section>
+
+                <nav
+                    class="navbar navbar-expand-lg bg-body-tertiarys d-flex justify-content-between align-items-center"
+                    role="navigation"
+                    aria-label="Menú superior"
+                >
+                    <!-- Logo de la organización -->
+                    <article class="navbar__logo">
+                        <a href="../index.html" itemprop="url">
+                            <img
+                                src="../assets/images/only.webp"
+                                alt="Logo Onlyplast, envases plásticos de calidad"
+                                class="navbar__logo--only img-fluid"
+                                itemprop="logo"
+                            />
+                        </a>
+                    </article>
+
+                    <!-- Buscador interno marcado para SEO -->
+                    <article
+                        class="browser font-monospace flex-grow-1 mx-3"
+                        itemscope
+                        itemtype="https://schema.org/WebSite"
+                    >
+                        <meta itemprop="url" content="https://tusitio.com" />
+                        <div
+                            class="browser__search"
+                            role="search"
+                            itemprop="potentialAction"
+                            itemscope
+                            itemtype="https://schema.org/SearchAction"
+                        >
+                            <meta
+                                itemprop="target"
+                                content="https://tusitio.com/?s={search_term_string}"
+                            />
+                            <label for="search-bar" class="visually-hidden"
+                                >Buscar envases plásticos</label
+                            >
+                            <input
+                                id="search-bar"
+                                class="form-control"
+                                type="search"
+                                placeholder="¿Qué estás buscando?..."
+                                aria-label="Buscar productos de envases plásticos"
+                                itemprop="query-input"
+                            />
+                        </div>
+                    </article>
+
+                    <!-- Botones de navegación -->
+                    <article class="buttons d-flex">
+                        <div class="buttons__x3 mx-1">
+                            <button
+                                onclick="location.href='#envios'"
+                                type="button"
+                                class="buttons__x3--individual text-white font-monospace"
+                            >
+                                <img
+                                    src="../assets/images/iconos/envios.svg"
+                                    alt="Envíos de envases plásticos"
+                                />
+                                <p>Envios</p>
+                            </button>
+                        </div>
+                        <div class="buttons__x3 mx-1">
+                            <button
+                                onclick="location.href='#nosotros'"
+                                type="button"
+                                class="buttons__x3--individual text-white font-monospace"
+                            >
+                                <img
+                                    src="../assets/images/iconos/quienessomos.svg"
+                                    alt="Quiénes somos Onlyplast"
+                                />
+                                <p>¿Quienes somos?</p>
+                            </button>
+                        </div>
+                        <div class="buttons__x3 mx-1">
+                            <button
+                                onclick="location.href='#footer_contacto'"
+                                type="button"
+                                class="buttons__x3--individual text-white font-monospace"
+                            >
+                                <img
+                                    src="../assets/images/iconos/contacto.svg"
+                                    alt="Contacto Onlyplast"
+                                />
+                                <p>Contacto</p>
+                            </button>
+                        </div>
+                    </article>
+                </nav>
+            </section>
+            <section
+                class="encabezado__central"
+                role="navigation"
+                aria-label="Menú desplegable"
+                itemscope
+                itemtype="https://schema.org/SiteNavigationElement"
+            >
+                <article class="encabezado__central--divisor"></article>
+                <article class="encabezado__central--desplegables">
+                    <!-- Menú AYUDA -->
+                    <div
+                        class="menu font-monospace"
+                        style="width: 100%"
+                        role="presentation"
+                        aria-label="Ayuda"
+                    >
+                        <li
+                            class="menu__d dropdown"
+                            style="width: 100%"
+                            role="none"
+                        >
+                            <p
+                                class="menu__d--link text-white"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                AYUDA
+                            </p>
+                            <ul
+                                class="dropdown-menu"
+                                style="width: 100%"
+                                role="menu"
+                            >
+                                <li role="none">
+                                    <a
+                                        class="dropdown-item"
+                                        href="#envios"
+                                        role="menuitem"
+                                    >
+                                        ¿Hacen envios?
+                                    </a>
+                                </li>
+                                <li role="none">
+                                    <a
+                                        class="dropdown-item"
+                                        href="#nosotros"
+                                        role="menuitem"
+                                    >
+                                        ¿Quienes somos?
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li role="none">
+                                    <a
+                                        class="dropdown-item"
+                                        href="#footer_contacto"
+                                        role="menuitem"
+                                    >
+                                        Contacto
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+
+                    <!-- Menú MODELOS -->
+                    <div
+                        class="menu font-monospace"
+                        style="width: 100%"
+                        role="presentation"
+                        aria-label="Modelos"
+                    >
+                        <li
+                            class="menu__d dropdown"
+                            style="width: 100%"
+                            role="none"
+                        >
+                            <p
+                                class="menu__d--link text-white"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                MODELOS
+                            </p>
+                            <ul
+                                class="dropdown-menu"
+                                style="width: 100%"
+                                role="menu"
+                            >
+                                <li role="none">
+                                    <a
+                                        class="dropdown-item"
+                                        href="Potes.html"
+                                        role="menuitem"
+                                    >
+                                        Potes
+                                    </a>
+                                </li>
+                                <li role="none">
+                                    <a
+                                        class="dropdown-item"
+                                        href="Botellas.html"
+                                        role="menuitem"
+                                    >
+                                        Botellas
+                                    </a>
+                                </li>
+                                <li role="none">
+                                    <a
+                                        class="dropdown-item"
+                                        href="Goteros.html"
+                                        role="menuitem"
+                                    >
+                                        Goteros
+                                    </a>
+                                </li>
+                                <li role="none">
+                                    <a
+                                        class="dropdown-item"
+                                        href="Vainilleros.html"
+                                        role="menuitem"
+                                    >
+                                        Vainilleros
+                                    </a>
+                                </li>
+                                <li role="none">
+                                    <a
+                                        class="dropdown-item"
+                                        href="Tapers.html"
+                                        role="menuitem"
+                                    >
+                                        Tapers
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </article>
+            </section>
+            <section
+                class="encabezado__inferior"
+                role="navigation"
+                aria-label="Navegación rápida de categorías"
+                itemscope
+                itemtype="https://schema.org/SiteNavigationElement"
+            >
+                <ul
+                    class="nav justify-content-center p-0 mb-0 font-monospace"
+                    role="menu"
+                >
+                    <!-- boton de Potes -->
+                    <li class="nav-item" role="none">
+                        <a href="Potes.html" role="menuitem" itemprop="url">
+                            <button class="btn btn-primary" itemprop="name">
+                                Potes
+                            </button>
+                        </a>
+                    </li>
+                    <!-- final boton de Potes -->
+
+                    <!-- boton de Botellas -->
+                    <li class="nav-item" role="none">
+                        <a href="Botellas.html" role="menuitem" itemprop="url">
+                            <button class="btn btn-primary" itemprop="name">
+                                Botellas
+                            </button>
+                        </a>
+                    </li>
+                    <!-- final boton de Botellas -->
+
+                    <!-- boton de Goteros -->
+                    <li class="nav-item" role="none">
+                        <a href="Goteros.html" role="menuitem" itemprop="url">
+                            <button class="btn btn-primary" itemprop="name">
+                                Goteros
+                            </button>
+                        </a>
+                    </li>
+                    <!-- final boton de Goteros -->
+
+                    <!-- boton de Vainilleros -->
+                    <li class="nav-item" role="none">
+                        <a
+                            href="Vainilleros.html"
+                            role="menuitem"
+                            itemprop="url"
+                        >
+                            <button class="btn btn-primary" itemprop="name">
+                                Vainilleros
+                            </button>
+                        </a>
+                    </li>
+                    <!-- final boton de Vainilleros -->
+
+                    <!-- boton de Bidones -->
+                    <li class="nav-item" role="none">
+                        <a href="Bidones.html" role="menuitem" itemprop="url">
+                            <button class="btn btn-primary" itemprop="name">
+                                Bidones
+                            </button>
+                        </a>
+                    </li>
+                    <!-- final boton de Bidones -->
+
+                    <!-- boton de Tapers -->
+                    <li class="nav-item" role="none">
+                        <a href="Tapers.html" role="menuitem" itemprop="url">
+                            <button class="btn btn-primary" itemprop="name">
+                                Tapers
+                            </button>
+                        </a>
+                    </li>
+                    <!-- final boton de Tapers -->
                 </ul>
-              </li>
-          </div>
-        </article>
-      </section>
- 
-      <section class="encabezado__inferior ">
-        <ul class="nav justify-content-center p-0 mb-0 font-monospace">
+            </section>
+        </header>
 
-          <!-- boton de Potes --><!-- boton de Potes -->
-          <li class="nav-item"><a href="Potes.html ">
-            <button class="btn btn-primary">Potes</button></a>
-          </li>
-          <!-- final boton de Potes --><!-- final boton de Potes -->
+        <!-- final header final header final header final header final header final header final header final header final header final header final header final -->
+        <main class="contenido">
+            <section class="primer_grid">
+                <article class="container my-4">
+                    <div class="row g-1 justify-content-center">
+                        <div class="grid-images col-3">
+                            <img
+                                src="../assets/images/slider/vainilleros/100 tapa.webp"
+                                alt="Imagen 1"
+                                class="img-fluid rounded"
+                            />
+                        </div>
+                        <div class="grid-images col-3">
+                            <img
+                                src="../assets/images/slider/vainilleros/30 tapa.webp"
+                                alt="Imagen 2"
+                                class="img-fluid rounded"
+                            />
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="segundo_grid">
+                <article class="container my-4">
+                    <div class="row g-1 justify-content-center">
+                        <div class="grid-images col-9">
+                            <img
+                                src="../assets/images/slider/vainilleros/100 tapa.webp"
+                                alt="Imagen 1"
+                                class="img-fluid rounded"
+                            />
+                        </div>
+                    </div>
+                    <div class="row g-2 justify-content-center">
+                        <div class="grid-images col-9">
+                            <img
+                                src="../assets/images/slider/vainilleros/30 tapa.webp"
+                                alt="Imagen 2"
+                                class="img-fluid rounded"
+                            />
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="tercer_grid">
+                <article class="container my-4">
+                    <div class="row g-1 justify-content-center">
+                        <div class="grid-images col-5">
+                            <img
+                                src="../assets/images/slider/vainilleros/100 tapa.webp"
+                                alt="Imagen 1"
+                                class="img-fluid rounded"
+                            />
+                        </div>
+                        <div class="grid-images col-5">
+                            <img
+                                src="../assets/images/slider/vainilleros/30 tapa.webp"
+                                alt="Imagen 2"
+                                class="img-fluid rounded"
+                            />
+                        </div>
+                    </div>
+                </article>
+            </section>
 
-          <!-- boton de Botellas --><!-- boton de Botellas -->
-          <li class="nav-item"><a href="Botellas.html">
-            <button class="btn btn-primary">Botellas</button></a>
-          </li>
-          <!-- final boton de Botellas --><!-- final boton de Botellas -->
+            <section id="nosotros" class="nosotros my-5 text-center">
+                <h2 class="mb-4 text-success">¿Quiénes Somos?</h2>
 
-          <!-- boton de Goteros --><!-- boton de Goteros -->
-          <li class="nav-item"><a href="Goteros.html">
-            <button class="btn btn-primary">Goteros</button></a>
-          </li>
-          <!-- final boton de Goteros --><!-- final boton de Goteros -->
+                <p class="text-muted small">
+                    <strong>¡Hola!</strong> Somos
+                    <span class="fw-bold text-success">ONLYPLAST</span>, una
+                    empresa dedicada a ofrecer soluciones con envases
+                    innovadores y de alta calidad para tus productos. Con un
+                    enfoque creativo y práctico, trabajamos para transformar la
+                    forma en que las personas y las empresas almacenan y
+                    presentan sus productos.
+                </p>
 
-          <!-- boton de Vainilleros --><!-- boton de Vainilleros -->
-          <li class="nav-item"><a href="Vainilleros.html">
-            <button class="btn btn-primary">Vainilleros</button></a>
-          </li>
-          <!-- finalboton de Vainilleros --> <!-- finalboton de Vainilleros -->
+                <p class="text-muted small">
+                    <strong class="text-success">Nuestra Misión:</strong>
+                    Proporcionar envases funcionales, elegantes y duraderos que
+                    protejan eficazmente lo que importa. Nos comprometemos a
+                    ofrecer productos de la más alta calidad que faciliten la
+                    vida de nuestros clientes y mejoren su experiencia al
+                    momento de almacenar y presentar sus productos.
+                </p>
 
-          <!-- boton de Bidones--><!-- boton de Bidones-->
-          <li class="nav-item"><a href="Bidones.html">
-            <button class="btn btn-primary">Bidones</button></a>
-          </li>
-          <!-- final boton de Bidones--><!-- final boton de Bidones-->
-          <!-- boton de Tapers--><!-- boton de Tapers-->
-          <li class="nav-item"><a href="Tapers.html">
-            <button class="btn btn-primary">Tapers</button></a>
-          </li>
-          <!-- final boton de Tapers--><!-- final boton de Tapers-->
-        </ul>
-        
-      </section>
-      <!-- final modelos desplegables --><!-- final modelos desplegables --><!-- final modelos desplegables -->
-      </header>
+                <p class="text-muted small">
+                    <strong class="text-success">Nuestra Visión:</strong>
+                    Convertirnos en una referencia en la industria de los
+                    envases, destacándonos por ofrecer soluciones innovadoras
+                    que se adapten a las necesidades de cada cliente. Queremos
+                    ser el socio ideal para empresas que buscan envases
+                    prácticos, funcionales y con un diseño atractivo, sin
+                    comprometer la calidad ni la experiencia del usuario.
+                </p>
 
-    <!-- final header final header final header final header final header final header final header final header final header final header final header final -->
-    <main class="contenido">
-      <section class="primer_grid">
-        <article class="container my-4">
-          <div class="row g-1 justify-content-center">
-            <div class="grid-images col-3">
-              <img
-                src="../assets/images/slider/vainilleros/100 tapa.webp"
-                alt="Imagen 1"
-                class="img-fluid rounded"
-              />
+                <h5 class="text-success mt-5">Nuestros Valores:</h5>
+                <ul class="list-unstyled small text-muted">
+                    <li>
+                        <strong>Innovación:</strong> Buscamos nuevas ideas y
+                        soluciones creativas que mejoren la funcionalidad y el
+                        diseño de nuestros envases.
+                    </li>
+                    <li>
+                        <strong>Calidad:</strong> Priorizamos la excelencia en
+                        nuestros productos, asegurando que cada uno cumpla los
+                        más altos estándares.
+                    </li>
+                    <li>
+                        <strong>Compromiso con el cliente:</strong> Entendemos
+                        sus necesidades y trabajamos para ofrecer un servicio
+                        personalizado y excepcional.
+                    </li>
+                    <li>
+                        <strong>Diseño:</strong> Creemos que el diseño es clave
+                        en la experiencia del producto. Nuestros envases son
+                        prácticos y atractivos.
+                    </li>
+                </ul>
+
+                <p class="text-muted small">
+                    <strong class="text-success">Nuestro Equipo:</strong> Cada
+                    miembro aporta creatividad y experiencia para desarrollar
+                    productos que realmente marcan la diferencia. Creemos en el
+                    poder de las ideas para transformar la forma en que las
+                    personas se relacionan con los productos.
+                </p>
+
+                <h5 class="text-success mt-5">¿Por qué elegirnos?</h5>
+                <ul class="list-unstyled small text-muted">
+                    <li>
+                        <strong>Variedad de productos:</strong> Amplia gama de
+                        envases adaptados a distintas necesidades y sectores.
+                    </li>
+                    <li>
+                        <strong>Diseño atractivo:</strong> Funcionales y
+                        estéticamente agradables, ideales para destacar.
+                    </li>
+                    <li>
+                        <strong>Servicio personalizado:</strong> Soluciones que
+                        se ajustan a las necesidades específicas de cada
+                        cliente.
+                    </li>
+                    <li>
+                        <strong>Calidad garantizada:</strong> Envases duraderos
+                        y funcionales, fabricados con materiales de alta
+                        calidad.
+                    </li>
+                </ul>
+            </section>
+            <section id="envios" class="envios my-5 text-center">
+                <h2 class="mb-4 text-success">¿Cómo son los envíos?</h2>
+
+                <p class="text-muted small">
+                    El tiempo que tarda tu compra desde que se acredita el pago
+                    hasta que llega a la dirección que indicaste dependerá del
+                    lugar donde te encuentres y de si el producto se encuentra
+                    en stock. Del mismo modo, las tarifas son variables.
+                </p>
+
+                <p class="text-muted small">
+                    Para tu mayor comodidad, podés elegir entre
+                    <strong class="text-success">2 alternativas de envío</strong
+                    >. A continuación te detallamos cada una para que puedas
+                    elegir la que más te convenga:
+                </p>
+
+                <h5 class="text-success mt-5">Envío a domicilio:</h5>
+
+                <ul class="list-unstyled small text-muted">
+                    <li>
+                        <strong>CABA/GBA:</strong> Tu compra será enviada por
+                        Correo Argentino o Andreani. Se realizará una sola
+                        visita a domicilio entre las 9 y las 19 hs. Puede
+                        recibir cualquier persona. En caso de que no haya nadie,
+                        el paquete será derivado a la sucursal del Correo más
+                        cercana. Podrás saber cuál es con el código de
+                        seguimiento que te enviaremos por mail. El paquete
+                        permanecerá en la sucursal durante 5 días para que lo
+                        retires. Pasado ese plazo, será devuelto a la oficina.
+                        Te rogamos que estés atent@ para evitar esto.
+                    </li>
+                    <li>
+                        <strong>Interior:</strong> Las condiciones son las
+                        mismas: envío con Correo Argentino o Andreani, una
+                        visita entre las 9 y las 19 hs, posibilidad de que
+                        reciba cualquier persona, y retiro en sucursal en caso
+                        de ausencia, con un plazo de 5 días para retirar el
+                        paquete.
+                    </li>
+                </ul>
+
+                <p class="text-muted small">
+                    En ambos casos,
+                    <strong
+                        >el despacho del pedido será entre 1 a 3 días
+                        hábiles</strong
+                    >. Luego, el tiempo de entrega puede ser de
+                    <strong>1 a 5 días hábiles</strong>, dependiendo del
+                    destino. Te enviaremos un mail con el número de seguimiento
+                    (no olvides revisar la carpeta de spam). Es tu
+                    responsabilidad realizar el seguimiento del envío.
+                </p>
+
+                <h5 class="text-success mt-5">Envío a sucursal:</h5>
+
+                <p class="text-muted small">
+                    En este caso también, tu pedido se despachará entre 1 a 3
+                    días hábiles. Luego será entregado por Correo Argentino o
+                    Andreani a la sucursal que corresponda, en un plazo de entre
+                    1 a 5 días hábiles.
+                </p>
+
+                <p class="text-muted small">
+                    Te llegará un mail con el número de seguimiento o guía de tu
+                    compra (verificá el correo no deseado). Tendrás
+                    <strong>5 días hábiles para retirarlo</strong>. Si no lo
+                    hacés dentro de ese plazo, el paquete será devuelto a
+                    nuestra oficina. Te pedimos que estés atent@ para evitar
+                    esto.
+                </p>
+            </section>
+        </main>
+        <footer
+            id="footer_contacto"
+            class="footer text-center text-light bg-dark py-4"
+        >
+            <div class="container">
+                <h4 class="text-success">Contacto</h4>
+                <p class="small">
+                    ¿Tenés alguna duda o querés hacer un pedido? Estamos para
+                    ayudarte.
+                </p>
+                <ul class="list-unstyled">
+                    <li><strong>Teléfono:</strong> 011-1234-5678</li>
+                    <li><strong>Email:</strong> contacto@onlyplast.com.ar</li>
+                    <li><strong>Dirección:</strong> Buenos Aires, Argentina</li>
+                </ul>
+                <p class="small">
+                    &copy; 2025 OnlyPlast. Todos los derechos reservados.
+                </p>
             </div>
-            <div class="grid-images col-3">
-              <img
-                src="../assets/images/slider/vainilleros/30 tapa.webp"
-                alt="Imagen 2"
-                class="img-fluid rounded"
-              />
-            </div>
-          </div>
-      </section>
-      <section class="segundo_grid">
-        <article class="container my-4">
-          <div class="row g-1 justify-content-center">
-            <div class="grid-images col-9">
-              <img
-                src="../assets/images/slider/vainilleros/100 tapa.webp"
-                alt="Imagen 1"
-                class="img-fluid rounded"
-              />
-            </div>
-          </div>
-          <div class="row g-2 justify-content-center">
-            <div class="grid-images col-9">
-              <img
-                src="../assets/images/slider/vainilleros/30 tapa.webp"
-                alt="Imagen 2"
-                class="img-fluid rounded"
-              />
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="tercer_grid">
-        <article class="container my-4">
-          <div class="row g-1 justify-content-center">
-            <div class="grid-images col-5">
-              <img
-                src="../assets/images/slider/vainilleros/100 tapa.webp"
-                alt="Imagen 1"
-                class="img-fluid rounded"
-              />
-            </div>
-            <div class="grid-images col-5">
-              <img
-                src="../assets/images/slider/vainilleros/30 tapa.webp"
-                alt="Imagen 2"
-                class="img-fluid rounded"
-              />
-            </div>
-          </div>  
-      </section>
-      
-      <section id="nosotros"  class="nosotros my-5 text-center">
-        <h2 class="mb-4 text-success">¿Quiénes Somos?</h2>
-      
-        <p class="text-muted small">
-          <strong>¡Hola!</strong> Somos <span class="fw-bold text-success">ONLYPLAST</span>, una empresa dedicada a ofrecer soluciones con envases innovadores y de alta calidad para tus productos. Con un enfoque creativo y práctico, trabajamos para transformar la forma en que las personas y las empresas, almacenan y presentan sus productos.
-        </p>
-      
-        <p class="text-muted small">
-          <strong class="text-success">Nuestra Misión:</strong> Proporcionar envases funcionales, elegantes y duraderos que protejan eficazmente lo que importa. Nos comprometemos a ofrecer productos de la más alta calidad que faciliten la vida de nuestros clientes y mejoren su experiencia al momento de almacenar y presentar sus productos.
-        </p>
-      
-        <p class="text-muted small">
-          <strong class="text-success">Nuestra Visión:</strong> Convertirnos en una referencia en la industria de los envases, destacándonos por ofrecer soluciones innovadoras que se adapten a las necesidades de cada cliente. Queremos ser el socio ideal para empresas que buscan envases prácticos, funcionales y con un diseño atractivo, sin comprometer la calidad ni la experiencia del usuario.
-        </p>
-      
-        <h5 class="text-success mt-5">Nuestros Valores:</h5>
-        <ul class="list-unstyled small text-muted">
-          <li><strong>Innovación:</strong> Buscamos nuevas ideas y soluciones creativas que mejoren la funcionalidad y el diseño de nuestros envases.</li>
-          <li><strong>Calidad:</strong> Priorizamos la excelencia en nuestros productos, asegurando que cada uno cumpla los más altos estándares.</li>
-          <li><strong>Compromiso con el cliente:</strong> Entendemos sus necesidades y trabajamos para ofrecer un servicio personalizado y excepcional.</li>
-          <li><strong>Diseño:</strong> Creemos que el diseño es clave en la experiencia del producto. Nuestros envases son prácticos y atractivos.</li>
-        </ul>
-      
-        <p class="text-muted small">
-          <strong class="text-success">Nuestro Equipo:</strong> Cada miembro aporta creatividad y experiencia para desarrollar productos que realmente marcan la diferencia. Creemos en el poder de las ideas para transformar la forma en que las personas se relacionan con los productos.
-        </p>
-      
-        <h5 class="text-success mt-5">¿Por qué elegirnos?</h5>
-        <ul class="list-unstyled small text-muted">
-          <li><strong>Variedad de productos:</strong> Amplia gama de envases adaptados a distintas necesidades y sectores.</li>
-          <li><strong>Diseño atractivo:</strong> Funcionales y estéticamente agradables, ideales para destacar.</li>
-          <li><strong>Servicio personalizado:</strong> Soluciones que se ajustan a las necesidades específicas de cada cliente.</li>
-          <li><strong>Calidad garantizada:</strong> Envases duraderos y funcionales, fabricados con materiales de alta calidad.</li>
-        </ul>
-      </section>
-      <section id="envios" class="envios my-5 text-center">
-        <h2 class="mb-4 text-success">¿Cómo son los envíos?</h2>
-      
-        <p class="text-muted small">
-          El tiempo que tarda tu compra desde que se acredita el pago hasta que llega a la dirección que indicaste dependerá del lugar donde te encuentres y de si el producto se encuentra en stock. Del mismo modo, las tarifas son variables.
-        </p>
-      
-        <p class="text-muted small">
-          Para tu mayor comodidad, podés elegir entre <strong class="text-success">2 alternativas de envío</strong>. A continuación te detallamos cada una para que puedas elegir la que más te convenga:
-        </p>
-      
-        <h5 class="text-success mt-5">Envío a domicilio:</h5>
-      
-        <ul class="list-unstyled small text-muted">
-          <li><strong>CABA/GBA:</strong> Tu compra será enviada por Correo Argentino o Andreani. Se realizará una sola visita a domicilio entre las 9 y las 19 hs. Puede recibir cualquier persona. En caso de que no haya nadie, el paquete será derivado a la sucursal del Correo más cercana. Podrás saber cuál es con el código de seguimiento que te enviaremos por mail. El paquete permanecerá en la sucursal durante 5 días para que lo retires. Pasado ese plazo, será devuelto a la oficina. Te rogamos que estés atent@ para evitar esto.</li>
-          <li><strong>Interior:</strong> Las condiciones son las mismas: envío con Correo Argentino o Andreani, una visita entre las 9 y las 19 hs, posibilidad de que reciba cualquier persona, y retiro en sucursal en caso de ausencia, con un plazo de 5 días para retirar el paquete.</li>
-        </ul>
-      
-        <p class="text-muted small">
-          En ambos casos, <strong>el despacho del pedido será entre 1 a 3 días hábiles</strong>. Luego, el tiempo de entrega puede ser de <strong>1 a 5 días hábiles</strong>, dependiendo del destino. Te enviaremos un mail con el número de seguimiento (no olvides revisar la carpeta de spam). Es tu responsabilidad realizar el seguimiento del envío.
-        </p>
-      
-        <h5 class="text-success mt-5">Envío a sucursal:</h5>
-      
-        <p class="text-muted small">
-          En este caso también, tu pedido se despachará entre 1 a 3 días hábiles. Luego será entregado por Correo Argentino o Andreani a la sucursal que corresponda, en un plazo de entre 1 a 5 días hábiles.
-        </p>
-      
-        <p class="text-muted small">
-          Te llegará un mail con el número de seguimiento o guía de tu compra (verificá el correo no deseado). Tendrás <strong>5 días hábiles para retirarlo</strong>. Si no lo hacés dentro de ese plazo, el paquete será devuelto a nuestra oficina. Te pedimos que estés atent@ para evitar esto.
-        </p>
-      </section>
+        </footer>
 
-    </main>
-    <!-- final carrousel de fotos --><!-- final carrousel de fotos --><!-- final carrousel de fotos -->
-    <!-- newsletter footer --><!-- newsletter footer --><!-- newsletter footer -->
-    <footer id="footer_contacto" class="footer">
-      <section class="footer__section font-monospace">
-        <h1 class="footer__section--h1 " >NEWSLETTER</h1>
-        <h2 class="footer__section--h2 ">¿Queres realizar una compra?</h2>
-        <p class="footer__section--p ">¿Quieres recibir nuestras ofertas? ¡Mandanos un email y te vamos a estar contactando!
-        </p>
-        <input class="footer__section--browser font-monospace" type="email" placeholder="Email... ">
-        <button class="footer__section--button">
-          <img
-          src="../assets/images/iconos/flecha derecha.svg"
-          alt="flecha"
-          />
-        </button>
-      </section>
-    </footer>
-    <!-- final newsletter footer --><!-- final newsletter footer --><!-- final newsletter footer -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-  <!--  body  --><!--  body  --><!--  body  -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
